@@ -1,39 +1,44 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Narcissistic Personality Disorder: Sources
+Developer: Stefania Frustagli
 
-Welcome,
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## User Stories
+### Site accessibility & functionality
+#### Simple viewers
+- As a simple viewer of the site (not registered or logged in), I expect to have access to all the information and sources available on the website, so that I can explore and gain insights without any barriers.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+- As a simple site viewer, I have the ability to register or log into the website, so that I have access to exclusive content in the community page and can engage more actively with the site's features.
 
-## Codeanywhere Reminders
+- As a site viewer, I want to be able to log in and contribute by posting and editing my comments on community and topic pages, fostering a sense of participation and collaboration within the website community.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+#### Potential Collaborators
+- As a potential collaborator, I seek a straightforward contact form on the About page, providing me with a convenient means to submit collaboration requests to the site creater, without having to create an account. 
 
-`python3 -m http.server`
+#### Registered users
+-  As a logged-in user, I require access to the comment functionality, empowering me to post, edit, and update my comments, so that I can meaningful engage and discuss within the website community.
+- As a logged-in user, I expect to be able to read all approved comments, so that I can fully utilise the interactive features of the site and stay informed about ongoing discussions and contributions from other users.
+- As a logged-in user, I can access the community page, ao that I can participate in discussions, share insights, and connect with other users.
+- As a logged-in user, I appreciate the ability to reset my password, so that I can regain access to the website in the event that I forget my login details.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+#### Admin Users
+- As a site administrator, I need the capability to select and add sources to the website, so that I can keep the content updated and relevant, enhancing the overall quality and value of the site to users.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+- As a site administrator, I require the ability to update and edit website content, so that I can manage and maintain the accuracy, clarity, and relevance of the information presented to users.
 
-`http_server`
+- As a site administrator, I can approve or disapprove comments, ensuring that objectionable content is filtered out and the website maintains a respectful and constructive environment for all users.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Content specificity
+#### Casual visitor
+- As a casual visitor, I can look at different material about narcissistic personality disorder so that I can gain insight into the subject.
+- As a casual visitor, I want to be able to browse through different materials about narcissistic personality disorder so that I can gain insight into the subject without feeling overwhelmed or lost.
+- As a casual visitor, I expect to understand the topic and scope of the website clearly so that I can make an informed decision about whether to explore it further or not.
+- As a casual visitor,  I expect an intuitive and user-friendly navigation system on the website so that I can effortlessly explore all sections and find relevant information without frustration.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+#### Someone interested in Narcissism
+- As someone interested in narcissism, I expect to have convenient access to a diverse range of sources gathered in one place, providing me with insights and perspectives not readily available through mainstream search engines like Google.
+- As someone interested in narcissism, I expect the website to offer a community forum or discussion board where like-minded individuals can share experiences, exchange insights, and support each other in coping with narcissistic relationships or behaviours.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+#### Potential victim of Narcissism abuse
+- As a potential victim of narcissistic behaviour, I seek resources and information on the website that can help me recognise and understand the signs of narcissistic abuse, empowering me to take necessary steps to protect myself and seek support if needed.
+- As a potential victim of narcissistic abuse, I seek practical resources and self-help tools on the website, such as checklists for identifying red flags, coping strategies for dealing with manipulation tactics, and links to support groups or helplines for seeking assistance and guidance.
+- As a potential victim of narcissistic abuse, I would appreciate the inclusion of personal narratives or testimonials from survivors who have overcome narcissistic relationships, inspiring hope and resilience among those currently struggling with similar challenges.
