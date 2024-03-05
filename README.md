@@ -54,8 +54,37 @@ Developer: Stefania Frustagli
 3 - As a potential victim of narcissistic abuse, I would appreciate the inclusion of personal narratives or testimonials from survivors who have overcome narcissistic relationships, inspiring hope and resilience among those currently struggling with similar challenges.
 
 ### UX & Design
-#### Initial Wireframes
+#### Wireframes
+Draft project plan:
+![Wireframe created using Figma](https://i.ibb.co/HNTL86J/frame.png)
 
-#### Colour scheme
+Homepage [Desktop and mobile]:
+![Wireframe created using Balsamiq - Homepage](https://i.ibb.co/gdnFy5q/Homepage.png)
 
-### data Model
+About page [Desktop and mobile]:
+![Wireframe created using Balsamiq - About page](https://i.ibb.co/rxFKB1X/About-Page.png)
+
+Register page [Desktop and mobile]:
+![Wireframe created using Balsamiq - Register](https://i.ibb.co/tXQ79jS/Register.png)
+
+Login page [Desktop and mobile]:
+![Wireframe created using Balsamiq - Login](https://i.ibb.co/MCDhRzp/Login.png)
+
+Topic page template [Desktop and mobile]:
+![Wireframe created using Balsamiq - Topic template](https://i.ibb.co/mcj6PmK/Topic-template.png)
+
+Topic page example [Desktop and mobile]:
+![Wireframe created using Balsamiq - Topic example](https://i.ibb.co/JrFm6hp/Topic-example.png)
+
+Community page [Desktop and mobile]:
+![Wireframe created using Balsamiq - Community Page](https://i.ibb.co/vPq1gvF/Community-page.png)
+
+
+
+
+
+
+
+### Data Model
+ERD - first version:
+![ERD](https://i.ibb.co/c1XywtS/ERD-first-version.png)
