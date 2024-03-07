@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class TopicsConfig(AppConfig):
+class content_managementConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'topics'
+    name = "content_management"
