@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from homepage import views as index_views
+from comments.views import my_comment
 
 urlpatterns = [
     path("homepage/", index_views.index, name="index"),
     path("admin/", admin.site.urls),
+    path("comments/", my_comment, name="comments"),
 ]

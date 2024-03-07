@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     "about_page",
     "authentication",
     "content_management",
+    "comments",
 ]
 
 MIDDLEWARE = [
