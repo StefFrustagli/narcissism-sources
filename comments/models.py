@@ -10,10 +10,14 @@ class Comment(models.Model):
         User, on_delete=models.CASCADE, related_name="commenter", default=1
     )
     content = models.ForeignKey(
-        Content, on_delete=models.CASCADE, related_name="comments"
+        Content, on_delete=models.CASCADE, related_name="comments", blank=True
     )
     source = models.ForeignKey(
-        Source, on_delete=models.CASCADE, related_name="comments", default=None
+        Source,
+        on_delete=models.CASCADE,
+        related_name="comments",
+        default=None,
+        blank=True,
     )
     body = models.TextField(default="")
     created_on = models.DateTimeField(auto_now_add=True)
