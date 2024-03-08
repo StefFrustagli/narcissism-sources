@@ -16,11 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from homepage import views as index_views
 # from comments.views import my_comment
 
 urlpatterns = [
-    path("homepage/", index_views.index, name="index"),
+    path("", include("homepage.urls"), name="homepage-urls"),
     path("admin/", admin.site.urls),
     path("comments/", include("comments.urls")),
 ]

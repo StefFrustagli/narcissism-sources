@@ -1,6 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.views import generic
+from .models import Topic
+
 
 # Create your views here.
-def index(request):
-    return HttpResponse("Hello, Django! I'm the homepage")
+class TopicList(generic.ListView):
+    queryset = Topic.objects.all()
+    template_name = "topic_list.html"
