@@ -1,11 +1,21 @@
 from django.db import models
 from django.contrib.auth.models import User
+from content_management.models import Content
+from content_management.models import Source
+from django.contrib.auth import get_user_model
 
 # Create your models here.
 class Comment(models.Model):
-    content = models.TextField()
-    # user_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name="commenter", default=1)
-    # body = models.TextField()
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="commenter", default=1
+    )
+    content = models.ForeignKey(
+        Content, on_delete=models.CASCADE, related_name="comments"
+    )
+    source = models.ForeignKey(
+        Source, on_delete=models.CASCADE, related_name="comments", default=None
+    )
+    body = models.TextField(default="")
     created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
 
