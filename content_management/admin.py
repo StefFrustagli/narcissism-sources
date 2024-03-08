@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import Source
-from .models import Content
+from .models import Source, Content
 
 # Register your models here.
 admin.site.register(Source)
