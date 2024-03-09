@@ -11,7 +11,7 @@ class Source(models.Model):
 class Content(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
-    embed_code = models.TextField()
+    embed_code = models.TextField()  # Store the embed code for the Instagram reel
     source = models.ForeignKey(Source, on_delete=models.CASCADE)
     topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
     slug = models.SlugField(unique=True, blank=True)
