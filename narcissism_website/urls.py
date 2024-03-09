@@ -19,7 +19,8 @@ from django.urls import path, include
 # from comments.views import my_comment
 
 urlpatterns = [
-    path("", include("homepage.urls"), name="homepage-urls"),
     path("admin/", admin.site.urls),
     path("comments/", include("comments.urls")),
+    path("summernote/", include("django_summernote.urls")),
+    path("", include("homepage.urls"), name="homepage-urls"),
 ]
