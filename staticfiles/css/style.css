@@ -91,22 +91,22 @@ body {
     z-index: 100;
 }
 
-.post-link {
+.topic-link {
     text-decoration: none;
     color: #445261;
 }
 
-.post-link:hover,
+.topic-link:hover,
 .page-link {
     color: #E84610;
 }
 
-.post-title {
+.topic-title {
     margin-top: 10%;
     margin-left: 5%;
 }
 
-.post-subtitle {
+.topic-subtitle {
     margin-left: 5%;
     color: lightgray;
 }
