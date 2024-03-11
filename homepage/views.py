@@ -12,7 +12,7 @@ class TopicList(generic.ListView):
 
 def topic_detail(request, slug):
     """
-    Display an individual :model:`blog.Post`.
+    Display an individual :model:`homepage.Topic`.
 
     **Context**
 

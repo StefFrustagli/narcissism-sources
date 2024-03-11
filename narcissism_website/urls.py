@@ -19,6 +19,7 @@ from django.urls import path, include
 # from comments.views import my_comment
 
 urlpatterns = [
+    path("about_page/", include("about_page.urls"), name="about_page-urls"),
     path("admin/", admin.site.urls),
     path("comments/", include("comments.urls")),
     path("content_management/", include("content_management.urls")),
