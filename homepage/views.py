@@ -26,9 +26,15 @@ def topic_detail(request, slug):
 
     queryset = Topic.objects.filter(status=1)
     topic = get_object_or_404(queryset, slug=slug)
+    comments = topic.comments.all().order_by("-created_on")
+    comment_count = topic.comments.filter(approved=True).count()
 
     return render(
         request,
         "homepage/topic_detail.html",
-        {"topic": topic},
+        {
+            "topic": topic,
+            "comments": comments,
+            "comment_count": comment_count,
+        },
     )
