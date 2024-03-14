@@ -1,7 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 from content_management.models import Content
-from content_management.models import Source
 from content_management.models import Topic
 from django.contrib.auth import get_user_model
 
@@ -11,16 +10,6 @@ class Comment(models.Model):
         User, on_delete=models.CASCADE, related_name="commenter", default=1)
     topic = models.ForeignKey(
         Topic, on_delete=models.CASCADE, related_name="comments", default=1)
-    # content = models.ForeignKey(s
-    #     Content, on_delete=models.CASCADE, related_name="comments", blank=True
-    # )
-    # source = models.ForeignKey(
-    #     Source,
-    #     on_delete=models.CASCADE,
-    #     related_name="comments",
-    #     default=None,
-    #     blank=True,
-    # )
     body = models.TextField(default="")
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
