@@ -4,12 +4,15 @@ from content_management.models import Content
 from content_management.models import Topic
 from django.contrib.auth import get_user_model
 
+
 # Create your models here.
 class Comment(models.Model):
     author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="commenter", default=1)
+        User, on_delete=models.CASCADE, related_name="commenter", default=1
+    )
     topic = models.ForeignKey(
-        Topic, on_delete=models.CASCADE, related_name="comments", default=1)
+        Topic, on_delete=models.CASCADE, related_name="comments", default=1
+    )
     body = models.TextField(default="")
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
