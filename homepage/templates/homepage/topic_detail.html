@@ -46,11 +46,12 @@
     <!-- Displaying Comments -->
     <div class="row">
         <div class="col-md-8 card mb-4  mt-3 ">
-            <h3>Comments:</h3>
+            <h3>| Comments section |</h3>
             <div class="card-body">
                 <!-- We want a for loop inside the empty control tags
               to iterate through each comment in comments -->
                 {% for comment in comments %}
+                {% if user.is_authenticated %}
                 <div class="p-2 comments
               {% if not comment.approved and comment.author == user %}
               faded{% elif not comment.approved %} d-none{% endif %}">
@@ -73,6 +74,7 @@
                     <button class="btn btn-edit" comment_id="{{ comment.id }}">Edit</button>
                     {% endif %}
                 </div>
+                {% endif %}
                 <!-- Our for loop ends here -->
                 {% endfor %}
             </div>
@@ -89,7 +91,7 @@
                     <button id="submitButton" type="submit" class="btn btn-signup btn-lg">Submit</button>
                 </form>
                 {% else %}
-                <p>Log in to leave a comment</p>
+                <p>Log in to leave or see comments</p>
                 {% endif %}
             </div>
         </div>
