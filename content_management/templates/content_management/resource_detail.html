@@ -8,6 +8,7 @@
             <!-- Reel Embed Code -->
             {% if content.source == 'instagram' %}
                 <!-- Use Instagram embed template. Inject the identifier using {{ content.source_identifier }} -->
+                {{ content.embed_code | safe }}
             {% elif content.source == 'youtube' %}
             <!-- Use Youtube embed template -->
             <iframe width="560" height="315"
