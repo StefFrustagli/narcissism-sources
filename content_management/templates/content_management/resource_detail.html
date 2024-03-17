@@ -1,0 +1,26 @@
+{% block content %}
+
+<div class="container">
+    <!-- Embedded Instagram Reels -->
+    <div class="row justify-content-center">
+        {% for content in content_set %}
+        <div class="col-lg-4 mb-4">
+            <!-- Reel Embed Code -->
+            {{ content.embed_code | safe }}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Add this debug statement in your template -->
+{% if content_set %}
+<ul>
+    {% for content in content_set %}
+    <li>{{ content.title }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No content available</p>
+{% endif %}
+
+{% endblock content %}

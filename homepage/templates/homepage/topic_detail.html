@@ -1,4 +1,5 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} 
+{% block content %}
 {% load static %}
 {% load crispy_forms_tags %}
 
@@ -11,9 +12,9 @@
                 <!-- Topic author goes before the | the topic's created date goes after -->
                 <p class="topic-subtitle">{{ topic.description }}</p>
             </div>
-            <div class="d-none d-md-block col-md-6 masthead-image">
+            <!-- <div class="d-none d-md-block col-md-6 masthead-image">
                 <img src="{% static 'images/default.jpg' %}" class="scale" alt="placeholder">
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
@@ -25,9 +26,8 @@
                 {% for content in topic.content_set.all %}
                 <!-- The topic content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
-                <p class="card-text">
-                    {{ topic.content | safe }}
-                </p>
+                <a href="{% url 'resource_detail' content.slug %}" class="resource-link"></a> <!-- Not sure if I need this-->
+                {% include 'content_management/resource_detail.html' %}
                 {% endfor %}
             </div>
         </div>

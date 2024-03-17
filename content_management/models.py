@@ -7,7 +7,7 @@ class Content(models.Model):
         ('instagram', 'Instagram'),
         ('youtube', 'YouTube'),
     )
-    topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
+    topic = models.ForeignKey(Topic, on_delete=models.CASCADE, related_name="content_set")
     title = models.CharField(max_length=100)
     slug = models.SlugField(unique=True, blank=True)
     source = models.CharField(max_length=25, choices=CONTENT_SOURCES)
