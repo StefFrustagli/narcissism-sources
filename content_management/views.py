@@ -6,17 +6,17 @@ from homepage.models import Topic
 # Create your views here.
 def resource_detail(request, topic_id):
     """
-
+    Display resource detail for a specific topic
     """
-    resource_detail = get_object_or_404(Topic, id= topic_id)
+    topic = get_object_or_404(Topic, id= topic_id)
     content_set = Content.objects.filter(topic=topic)
 
     # content_set = Content.objects.filter(content=content)
 
-    template = 'resource_detail.html'
+    template = 'topic_detail.html'
 
     context = {
-        'resource_detail': resource_detail,
+        'resource_detail': topic,
         'content_set': content_set
     }
 

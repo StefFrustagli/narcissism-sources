@@ -6,13 +6,23 @@
         {% for content in content_set %}
         <div class="col-lg-4 mb-4">
             <!-- Reel Embed Code -->
-            {{ content.embed_code | safe }}
+            {% if content.source == 'instagram' %}
+                <!-- Use Instagram embed template. Inject the identifier using {{ content.source_identifier }} -->
+            {% elif content.source == 'youtube' %}
+            <!-- Use Youtube embed template -->
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/{{ content.source_identifier }}?si=7eRCL1TMBDgE7yQB"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+            {% endif %}
         </div>
         {% endfor %}
     </div>
 </div>
 
-<!-- Add this debug statement in your template -->
+<!-- debug statement -->
 {% if content_set %}
 <ul>
     {% for content in content_set %}
