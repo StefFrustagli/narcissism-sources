@@ -4,21 +4,21 @@
 
 {% block content %}
 <div class="container mt-5">
-    <div class="row">
-        <div class="col-8">
+    <div class="row justify-content-center">
+        <div class="col-8 text-center">
             <h2>{{ about_page.title }}</h2>
             {{ about_page.content | safe }}
         </div>
     </div>
-    <div class="row">
-        <div class="col text-right">
+    <div class="row justify-content-center">
+        <div class="col text-center">
             <!-- Updated on field goes in here -->
 
             <p class="text-end"><em>Updated on: {{ about_page.updated_on }}</em></p>
         </div>
     </div>
     <div class="row justify-content-center">
-        <div class="col-12 col-md-6 my-5">
+        <div class="col-12 col-md-6 my-5 text-center">
             <h2>Let's collaborate!</h2>
             <p>I believe in the power of shared knowledge and collective effort.
                 Whether you have a project in mind, wish to co-author
