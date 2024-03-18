@@ -16,7 +16,7 @@ def resource_detail(request, topic_id):
     template = 'topic_detail.html'
 
     context = {
-        'resource_detail': topic,
+        'topic': topic, # 'resource_detail' renamed to 'topic'
         'content_set': content_set
     }
 

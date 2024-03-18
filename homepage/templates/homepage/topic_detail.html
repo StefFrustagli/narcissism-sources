@@ -9,7 +9,7 @@
             <div class="col-md-6 masthead-text">
                 <!-- Topic title goes in these h1 tags -->
                 <h1 class="topic-title">{{ topic.title }}</h1>
-                <!-- Topic author goes before the | the topic's created date goes after -->
+                <!-- Topic description -->
                 <p class="topic-subtitle">{{ topic.description }}</p>
             </div>
             <!-- <div class="d-none d-md-block col-md-6 masthead-image">
@@ -22,7 +22,7 @@
 <div class="container">
     <div class="row">
         <div class="col card mb-4  mt-3 left  top">
-            <div class="card-body">
+            <div class="card-body">               
                 {% for content in topic.content_set.all %}
                 <!-- The topic content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->

@@ -3,11 +3,11 @@
 <div class="container">
     <!-- Embedded Instagram Reels -->
     <div class="row justify-content-center">
-        {% for content in content_set %}
+        {% for content in topic.content_set.all %}
         <div class="col-lg-4 mb-4">
             <!-- Reel Embed Code -->
             {% if content.source == 'instagram' %}
-                <!-- Use Instagram embed template. Inject the identifier using {{ content.source_identifier }} -->
+            <!-- Use Instagram embed template. Inject the identifier using {{ content.source_identifier }} -->
                 {{ content.embed_code | safe }}
             {% elif content.source == 'youtube' %}
             <!-- Use Youtube embed template -->
@@ -24,14 +24,13 @@
 </div>
 
 <!-- debug statement -->
-{% if content_set %}
+{% if topic.content_set.all %}
 <ul>
-    {% for content in content_set %}
+    {% for content in content_set.all %}
     <li>{{ content.title }}</li>
     {% endfor %}
 </ul>
 {% else %}
 <p>No content available</p>
 {% endif %}
-
 {% endblock content %}
