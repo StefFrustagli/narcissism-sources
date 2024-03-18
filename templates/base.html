@@ -50,7 +50,7 @@
 
                     <li class="nav-item">
                         <a class="nav-link
-                             {% if request.path == about_page_url %}active{%endif%}" aria-current="page"
+                             {% if request.path == about_url %}active{% endif %}" aria-current="page"
                             href="{% url 'about_page' %}">About</a>
                     </li>
                     {% if user.is_authenticated %}

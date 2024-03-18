@@ -10,7 +10,7 @@ body {
 }
 
 .purple-part {
-  color: #692fc8;
+  color: #594275;
 }
 
 .thin {
@@ -21,6 +21,7 @@ body {
   background-color: #fff;
 }
 
+/* Footer */
 .dark-bg {
   background-color: #594275;
   color: #fff;
@@ -121,7 +122,7 @@ body {
 }
 
 .btn-edit {
-  background-color: #baa1d5;
+  background-color: #a277d1;
   color: #fff;
 }
 
@@ -136,13 +137,23 @@ body {
   color: #fff;
 }
 
-.link {
+.btn-secondary {
+  background-color: #594275;
   color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #9351ff;
+  color: #fff;
+}
+
+.link {
+  color: #692fc8;
   text-decoration: none;
 }
 
 .link:hover {
-  color: #fff;
+  color: #8c70aa;
   text-decoration: underline;
 }
 
