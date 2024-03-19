@@ -8,6 +8,18 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 # Create your models here.
 class Topic(models.Model):
+    """
+    Model representing a topic.
+
+    Attributes:
+        title (str): The title of the topic.
+        slug (str): The slug for the topic.
+        featured_image (CloudinaryField): The featured image of the topic.
+        description (str): The description of the topic.
+        custom_order (int): The custom order for sorting topics.
+        status (int): The status of the topic (Draft or Published).
+        created_on (datetime): The date and time when the topic was created.
+    """
     title = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=100, unique=True)
     featured_image = CloudinaryField('image', default='placeholder')

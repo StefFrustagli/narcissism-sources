@@ -6,7 +6,15 @@ from homepage.models import Topic
 # Create your views here.
 def resource_detail(request, topic_id):
     """
-    Display resource detail for a specific topic
+    Render the detail page for a specific topic's resources.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+        topic_id (int): The ID of the topic whose resources are to be displayed.
+
+    Returns:
+        HttpResponse: The rendered HTML response displaying 
+        the topic's resources.
     """
     topic = get_object_or_404(Topic, id= topic_id)
     content_set = Content.objects.filter(topic=topic)

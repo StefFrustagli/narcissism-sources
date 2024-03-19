@@ -6,7 +6,16 @@ from .forms import CollaborateForm
 # Create your views here.
 def about_page(request):
     """
-    Renders the About page
+    Render the About page.
+
+    Retrieves the latest About page content and renders it along with
+    the collaboration form.
+
+    Args:
+        request (HttpRequest): The HTTP request object.
+
+    Returns:
+        HttpResponse: The rendered About page template.
     """
     if request.method == "POST":
         collaborate_form = CollaborateForm(data=request.POST)

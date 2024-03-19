@@ -9,24 +9,31 @@ from .forms import CommentForm
 
 # Create your views here.
 class TopicList(generic.ListView):
+    """
+    View for displaying a list of topics.
+
+    Attributes:
+        queryset (QuerySet): The queryset containing all topics.
+        template_name (str): The name of the template to render.
+        paginate_by (int): The number of topics to display per page.
+    """
     queryset = Topic.objects.all()
     template_name = "homepage/index.html"
     paginate_by = 6
 
 def topic_detail(request, slug):
     """
-    Display an individual :model:`homepage.Topic`.
+    Display an individual topic with its comments.
 
-    **Context**
+    Context:
+        topic (Topic): An instance of Topic.
+        comments (QuerySet): All comments related to the topic.
+        comment_count (int): The total count of comments for the topic.
+        comment_form (CommentForm): The form for submitting new comments.
 
-    ``topic``
-        An instance of :model:`homepage.Topic`.
-
-    **Template:**
-
-    :template:`homepage/topic_detail.html`
+    Template:
+        homepage/topic_detail.html
     """
-
     queryset = Topic.objects.filter(status=1)
     topic = get_object_or_404(queryset, slug=slug)
     comments = topic.comments.all().order_by("-created_on")
@@ -59,7 +66,13 @@ def topic_detail(request, slug):
 
 def comment_edit(request, slug, comment_id):
     """
-    view to edit comments
+    View to edit comments.
+
+    If the form is valid and the comment belongs to the logged-in user,
+    it updates the comment and displays a success message.
+    Otherwise, it displays an error message.
+
+    Redirects to the topic detail page after processing.
     """
     if request.method == "POST":
 
@@ -82,7 +95,12 @@ def comment_edit(request, slug, comment_id):
 
 def comment_delete(request, slug, comment_id):
     """
-    view to delete comment
+    View to delete comments.
+
+    If the comment belongs to the logged-in user, it deletes the comment
+    and displays a success message. Otherwise, it displays an error message.
+
+    Redirects to the topic detail page after processing.
     """
     queryset = Topic.objects.filter(status=1)
     topic = get_object_or_404(queryset, slug=slug)

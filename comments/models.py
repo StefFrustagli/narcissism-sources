@@ -1,12 +1,23 @@
 from django.db import models
 from django.contrib.auth.models import User
-from content_management.models import Content
-from content_management.models import Topic
+from content_management.models import Content, Topic
 from django.contrib.auth import get_user_model
 
-
-# Create your models here.
+# This model represents comments on topics.
+# It is part of the "comments" app, which will be expanded to include
+# community features in the future.
 class Comment(models.Model):
+    """
+    Represents a comment made by a user on a topic.
+
+    Attributes:
+        author (User): The user who made the comment.
+        topic (Topic): The topic on which the comment was made.
+        body (str): The content of the comment.
+        created_on (DateTime): The date/time when the comment was created.
+        updated_on (DateTime): The date/time when the comment was last updated.
+        approved (bool): Indicates whether the comment has been approved.
+    """
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="commenter", default=1
     )
