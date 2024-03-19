@@ -34,6 +34,7 @@ body {
 /* Topic cards */
 .card {
   background-color: transparent;
+  border: none;
 }
 
 .image-container {
@@ -184,6 +185,11 @@ body {
   color: #fff;
   background: #ba0000;
   border: none;
+}
+
+.alert{
+  background-color: #692fc8;
+  color: #fff;
 }
 
 .faded {
