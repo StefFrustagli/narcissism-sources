@@ -31,9 +31,10 @@ body {
   background-color: #f9fafc;
 }
 
+/* Topic cards */
 .card {
-  border: 2px solid #b1a8b9;
   background-color: transparent;
+  border: none;
 }
 
 .image-container {
@@ -69,7 +70,7 @@ body {
 }
 
 .masthead-text {
-  background-color: #692fc8;
+  background-color: #594275;
   color: white;
   position: relative;
 }
@@ -163,9 +164,11 @@ body {
 
 .btn-like {
   color: #9d88b3;
-  border: none;
+  border: none; 
   background: transparent;
 }
+
+/* Deletion button */
 
 .btn-delete {
   color: #fff;
@@ -182,6 +185,11 @@ body {
   color: #fff;
   background: #ba0000;
   border: none;
+}
+
+.alert{
+  background-color: #692fc8;
+  color: #fff;
 }
 
 .faded {
