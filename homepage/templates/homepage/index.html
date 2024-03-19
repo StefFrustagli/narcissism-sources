@@ -18,15 +18,12 @@
                                 <img class="card-img-top" src=" {{ topic.featured_image.url }}" alt="{{ topic.title }}">
                                 {% endif %}
                                 <div class="image-flash">
-                                    <!-- <p class="author">Author: {{ topic.author }}</p> -->
                                 </div>
                             </div>
                             <a href="{% url 'topic_detail' topic.slug %}" class="topic-link">
                                 <h2 class="card-title">{{ topic.title }}</h2>
-                                <p class="card-text">{{ topic.description }}</p>
+                                <article class="card-text">{{ topic.description }}</article>
                             </a>
-
-                            <!-- <p class="card-text text-muted h6">{{ topic.created_on}} -->
                             </p>
                         </div>
                     </div>
