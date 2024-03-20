@@ -117,6 +117,13 @@ body {
   color: lightgray;
 }
 
+/* Topic images  */
+.image-container {
+  width:15rem;
+  height: 15rem;
+}
+
+
 .btn-signup {
   background-color: #9351ff;
   color: #fff;
