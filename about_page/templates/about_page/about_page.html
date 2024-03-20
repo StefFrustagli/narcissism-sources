@@ -5,29 +5,25 @@
 {% block content %}
 <div class="container mt-5">
     <div class="row justify-content-center">
-        <div class="col-8 text-center">
-            <h2>{{ about_page.title }}</h2>
-            {{ about_page.content | safe }}
+        <div class="col-md-6">
+            
+                <h2>{{ about_page.title }}</h2>
+                {{ about_page.content | safe }}            
         </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col text-center">
-            <!-- Updated on field goes in here -->
-
-            <p class="text-end"><em>Updated on: {{ about_page.updated_on }}</em></p>
-        </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-12 col-md-6 my-5 text-center">
-            <h2>Leave a feedback</h2>
-            <p>Please feel free to leave a feedback or request of collaboration, if you are interested in this project. I have big plans, and I'll be happy to hear from you!</p>
-            <!-- add your form here. Your submit button should 
-                                        have the classes of btn, btn-secondary -->
+        <div class="col-md-6">
+            <div class="text-center mb-4"> <!-- Add margin bottom -->
+                <h2>Leave a feedback</h2>
+                <p>Please feel free to leave feedback or a collaboration request if you are interested in this project.
+                    I have big plans, and I'll be happy to hear from you!</p>
+            </div>
+            <!-- add your form here. Your submit button should have the classes of btn, btn-secondary -->
+            <div class="text-center">
                 <form method="post">
                     {{ collaborate_form | crispy }}
                     {% csrf_token %}
                     <button class="btn btn-secondary" type="submit">Submit</button>
                 </form>
+            </div>
         </div>
     </div>
 </div>
