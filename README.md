@@ -1,4 +1,4 @@
-# Narcissistic Personality Disorder: Sources
+# Narcissistic Personality Disorder: Resources
 Developer: Stefania Frustagli
 
 DESCRIPTION
@@ -20,10 +20,35 @@ Responsive Mockup:
 - [Credits](#credits)
 
 
-## User Experience
 
-### Project's goal & Design 
-#### Original Colour palettes
+
+## Project's goal & background
+### Problem Statement
+Through the years, I have 'liked' on Instagram and YouTube a large amount of reels and videos about Narcissism. During my recovery journey, these reels and videos played an important role - actually, I would say they were pivotal in my recovery.
+As we encounter a massive amount of information on social apps and may miss it, I wanted to make this material easily accessible, in one place, for those who might need it. 
+
+How to do that? This website was my answer. 
+The primary intent was to create a site, easy to navigate and interactive, containing all the material (or at least, at the beginning, some of it) that could be as helpful to others as it was for me.
+
+### Agile Development
+- The development process was carried out using Agile methodology with a focus on continuous improvement.
+
+- The project was managed using a GitHub Project board with user stories and tasks.
+
+- User Stories were differentiated in EPIC A, B, C, D, E and F according to users' type and content specificity. They were prioritised based on the MoSCoW method (Must have, Should have, Could have, Won't have).
+
+[Link to the GitHub Project board](https://github.com/users/StefFrustagli/projects/2/views/1)
+
+#### The design process: thinking through it
+Originally, I planned to use a purple color palette since it felt neutral (the color also reminded me of vampires, and this creature would be perfectly associated with the theme).
+
+However, as I was building the site and researching images, I wasn't sure about the color anymore. My interest was piqued by an illustration with a red background, a black silhouette of a body, and white strings. The colour red conveys danger vibes and it would fit perfectly - but it was too 'strong' so I reverted to purple.
+
+Purple is neutral - it appears calm - yet mysterious and enigmatic, so in my mind it still evokes the alert feeling I want to reproduce. And as I said, it reminds me of vampires. The appropriate analogy with vampires and narcissism will be used at some point; I'm not sure how yet.
+
+The colour purple is also associated with healing, and healing from narcissistic abuse is the ultimate hope for my users and the reason why I built this site.
+
+#### Colour palettes
 
 ![Colour Palette](https://i.ibb.co/Rg9f3bt/my-screenshots-2024-03-18-at-07-53-23.png)
 
@@ -33,18 +58,16 @@ Responsive Mockup:
 
 #7e3594, #ffffff, #594275
 
-### The thinking process
-Originally, I planned to use a purple color palette since it felt neutral (the color also reminded me of vampires, and this creature would be perfectly associated with the theme).
 
-However, as I was building the site and researching images, I wasn't sure about the color anymore. My interest was piqued by an illustration with a red background, a black silhouette of a body, and white strings. The colour red conveys danger vibes and it would fit perfectly - but it was too 'strong' so I reverted to purple.
+## User Experience
+#### Ideal users:
+- Someone who has experienced or is experiencing this kind of abuse;
+- Someone who is interested in understanding more about Narcissism.
 
-Purple is neutral - it appears calm - yet mysterious and enigmatic, so in my mind it still evokes the alert feeling I want to reproduce. And as I said, it reminds me of vampires. The appropriate analogy with vampires and narcissism will be used at some point; I'm not sure how yet.
-
-### Ideal user
-AGGIUNGI
-
-### As a developer, I expect:
-AGGIUNGI
+#### As a developer, I expect:
+- the user to have easy navigation of all the content in the website;
+- the user to find the website appealing and informative in a different way than a search engine;
+- the user to find the content helpful and find support during their awareness journey or/and recovery process.
 
 ### User Stories: Site accessibility & functionality
 #### [EPIC A] Simple viewers (users not logged in) 
@@ -141,13 +164,46 @@ ERD - first version:
 ## Features and functionalities
 
 ### Current Features
+DA FINIRE
+- **Homepage**
+
+- **About page**
+
+- **Footer**
+
+- **Navbar**
+
+- **Comment section & comment functionalities**
+ADD, EDIT, DELETE COMMENT below the topic page
+
+- **Topic page with content**
+
+- **Register**
+
+- **Sign in**
+
+- **Logout**
+
+- **Feedback form**
+
 
 ### Future Features and general aspects left to implement
+This is only the first version of a big project I have in mind. Find some of the future aspects left to implement below:
 
+- **Graphics & content organisation**: 
+In order to make the website professional and appealing, the graphic needs to be improved. I plan to hire an illustrator to design the topic images for the homepage or to do them myself.
+In addition, I would like to improve the navigation with tags and organize the content more attractively.
+
+- **Community page & comment app**:
+You can see a comments app because I am planning to create a community page, an essential element of the website, as sharing is a fundamental step in the healing process.
+To build the foundation for my future features, I decided to have an app to manage user interactions in my future community page.
+
+- **Collaborations & courses**: 
+My goal is to make the site more visible once aesthetics are improved. I'll share it on channels/platforms where the subject is discussed. My plan is to contact professionals who deal with the topic and arrange courses for users.
 
 
 ## Technologies used
-
+DA MODIFICARE
 - [Python](https://www.python.org): Hight-level programming language used for the creation of the game.
 - [PEP8](http://pep8online.com/) was used to check the code for PEP8 requirements.
 - [Code Beautify - Python Beautifier](https://codebeautify.org/python-formatter-beautifier) was used to format the code.
@@ -163,7 +219,7 @@ ERD - first version:
 
 
 ## Modules imported AGGIUNGI MODULI
-The three modules used are part of the Python Standard Library.
+The three modules used are part of the Python Standard Library. DA MODIFICARE
 - **Random Module**: 
 - **String Module**: 
 - **Sys Module**: 
@@ -216,4 +272,4 @@ DA AGGIUNGERE
 
 ### Acknowledgment
 
-I am very grateful to my mentor Brian Macharia for his suggestions, and to my classmate Niclas for his precious support. Also, a special thanks goes to the amazing tool that is ChatGPT.
+I am very grateful to my mentor Brian Macharia for his suggestions, and to my classmate Niclas for his precious support and help. 
