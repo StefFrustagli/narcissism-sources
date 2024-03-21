@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-# from comments.views import my_comment
+from .views import handler404, handler500, handler403, handler405
 
 urlpatterns = [
     path("about_page/", include("about_page.urls"), name="about_page-urls"),
@@ -27,3 +27,8 @@ urlpatterns = [
     path("summernote/", include("django_summernote.urls")),
     path("", include("homepage.urls"), name="homepage-urls"),
 ]
+
+handler404 = "narcissism_website.views.handler404"
+handler500 = "narcissism_website.views.handler500"
+handler403 = "narcissism_website.views.handler403"
+handler405 = "narcissism_website.views.handler405"

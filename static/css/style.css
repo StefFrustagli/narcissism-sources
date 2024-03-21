@@ -235,3 +235,8 @@ body {
 .approval {
   color: #baa1d5;
 }
+
+/* Error pages */
+.underline-link {
+    text-decoration: underline;
+}
