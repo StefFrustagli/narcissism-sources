@@ -1,8 +1,12 @@
-# Narcissistic Personality Disorder: Resources
+# Narcissistic Personality Disorder: Social Resources
 Developer: Stefania Frustagli
 
-## Overview
-AGGIUNGI DESCRIZIONE
+## Website Overview
+The purpose of this website is to provide a centralized repository of resources from social media related to understanding narcissistic and violent behaviors. By incorporating reels from platforms, like Instagram and YouTube,  this project aims to shed light on subtle and recurrent abuse patterns. 
+My goal is to raise awareness about these patterns, empowering individuals to recognize and protect themselves from toxic influences, ultimately leading to a better quality of life.
+#### Why Narcissism awareness?
+This is a very personal project. I wanted to share all the material I found helpful during the years. 
+I strongly believe in the importance of education. Narcissistic abuse, or violent behaviours, can be insidious and difficult to identify, so it's crucial to have prevention and recovery plans. Through this project, I hope to facilitate discussions and provide valuable insights into narcissistic behaviors, helping individuals understand and navigate their experiences more effectively.
 
 View the live project [here](https://narcissism-website-8191a44972de.herokuapp.com/).
 
@@ -187,6 +191,10 @@ ADD, EDIT, DELETE COMMENT below the topic page
 
 - **Feedback form**
 
+- **Favicon**
+
+- **Error pages**
+
 
 ### Future Features and general aspects left to implement
 This is only the first version of a big project I have in mind. Find some of the future aspects left to implement below:
@@ -201,6 +209,8 @@ To build the foundation for my future features, I decided to have an app to mana
 
 - **Collaborations & courses**: 
 My goal is to make the site more visible once aesthetics are improved. I'll share it on channels/platforms where the subject is discussed. My plan is to contact professionals who deal with the topic and arrange courses for users.
+
+- **Error pages** are present in the website but the design  was left to implement.
 
 
 ## Technologies used
