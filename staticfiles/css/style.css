@@ -66,14 +66,6 @@ body {
   position: relative;
 }
 
-.image-flash {
-  position: absolute;
-  bottom: 5%;
-  min-width: 30%;
-  left: -2px;
-  background-color: #9d88b3;
-}
-
 .scale {
   width: 100%;
   height: auto;

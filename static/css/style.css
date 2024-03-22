@@ -32,6 +32,7 @@ body {
   color: #fff;
 }
 
+/* Background color */
 .main-bg {
   background-color: #f9fafc;
 }
@@ -62,19 +63,14 @@ body {
 
 }
 
+/* Topic image */
 .image-container {
-  position: relative;
+  /* position: relative; */
+  width:13rem;
+  height: 13rem;
 }
 
-.image-flash {
-  position: absolute;
-  bottom: 5%;
-  min-width: 30%;
-  left: -2px;
-  background-color: #9d88b3;
-}
-
-.scale {
+/* .scale {
   width: 100%;
   height: auto;
 }
@@ -83,7 +79,7 @@ body {
   color: white;
   margin: 4px;
   text-transform: uppercase;
-}
+} */
 
 .masthead {
   margin-top: 0.4rem;
@@ -144,11 +140,7 @@ body {
   font-size: 1.5rem;
 }
 
-/* Topic images  */
-.image-container {
-  width:13rem;
-  height: 13rem;
-}
+
 
 
 .btn-signup {

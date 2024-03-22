@@ -9,7 +9,7 @@
             <div class="row">
                 {% for topic in topic_list %}
                 <div class="col-md-6"> <!-- Use col-md-6 for two columns -->
-                    <div class="card mb-4 h-95">
+                    <div class="card mb-2 h-100 d-flex justify-content-center align-items-center">
                         <div class="card-body card-topic-title">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
@@ -18,8 +18,6 @@
                                 {% else %}
                                 <img class="card-img-top" src=" {{ topic.featured_image.url }}" alt="{{ topic.title }}">
                                 {% endif %}
-                                <div class="image-flash">
-                                </div>
                             </div>
                             <a href="{% url 'topic_detail' topic.slug %}" class="topic-link">
                                 <h2 class="card-title">{{ topic.title }}</h2>
