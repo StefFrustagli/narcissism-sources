@@ -1,4 +1,6 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, redirect 
+from django.urls import reverse
+from django.contrib.auth.decorators import login_required
 from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
@@ -40,6 +42,10 @@ def topic_detail(request, slug):
     comment_count = topic.comments.filter(approved=True).count()
 
     if request.method == "POST":
+        # If user is not authenticated, send them to the login
+        if not request.user.is_authenticated:
+            return redirect(reverse("account_login"))
+
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
             comment = comment_form.save(commit=False)
@@ -64,6 +70,7 @@ def topic_detail(request, slug):
     )
 
 
+@login_required
 def comment_edit(request, slug, comment_id):
     """
     View to edit comments.
@@ -93,6 +100,7 @@ def comment_edit(request, slug, comment_id):
     return HttpResponseRedirect(reverse("topic_detail", args=[slug]))
 
 
+@login_required
 def comment_delete(request, slug, comment_id):
     """
     View to delete comments.
