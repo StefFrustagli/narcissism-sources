@@ -1,9 +1,10 @@
 # Narcissistic Personality Disorder: Resources
 Developer: Stefania Frustagli
 
-DESCRIPTION
+## Overview
+AGGIUNGI DESCRIZIONE
 
-View the live project [here](https://). AGGIUNGI HEROKU
+View the live project [here](https://narcissism-website-8191a44972de.herokuapp.com/).
 
 Responsive Mockup:
 
