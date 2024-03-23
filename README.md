@@ -10,16 +10,24 @@ I strongly believe in the importance of education. Narcissistic abuse, or violen
 
 View the live project [here](https://narcissism-website-8191a44972de.herokuapp.com/).
 
-Responsive Mockup:
-
-![Responsive Mockup]() AGGIUNGI MOCKUP
+Responsive Mockup: ![Responsive Mockup]() AGGIUNGI MOCKUP
 
 ## Table of Contents DA MODIFICARE 
 
-- [User Experience (UX)](#user-experience)
-- [Planning ](#Planning)
-- [Features & Game functionalities](#features-and-game-functionalities)
-- [Tecnologies used](#technologies-used)
+- [Website Overview](#website-overview)
+- [Project background & User Experience](#project-background--user-experience)
+  - [Agile Development](#agile-development)
+  - [Problem Statement](#problem-statement)
+  - [The Design Process](#the-design-process-thinking-through-it)
+  - [Colour Palettes](#colour-palettes)
+  - [Wireframes](#wireframes)
+  - [Data Model](#data-model)
+  - [Ideal Users](#ideal-users)
+  - [User Stories](#user-stories-site-accessibility--functionality)
+- [Features and functionalities](#features-and-functionalities)
+  - [Current Feature](#current-features)
+  - [Future Feature](#future-features-and-general-aspects-left-to-implement)
+- [Technologies used](#technologies-used)  
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
@@ -27,14 +35,7 @@ Responsive Mockup:
 
 
 
-## Project's goal & background
-### Problem Statement
-Through the years, I have 'liked' on Instagram and YouTube a large amount of reels and videos about Narcissism. During my recovery journey, these reels and videos played an important role - actually, I would say they were pivotal in my recovery.
-As we encounter a massive amount of information on social apps and may miss it, I wanted to make this material easily accessible, in one place, for those who might need it. 
-
-How to do that? This website was my answer. 
-The primary intent was to create a site, easy to navigate and interactive, containing all the material (or at least, at the beginning, some of it) that could be as helpful to others as it was for me.
-
+## Project background & User Experience
 ### Agile Development
 - The development process was carried out using Agile methodology with a focus on continuous improvement.
 
@@ -44,7 +45,14 @@ The primary intent was to create a site, easy to navigate and interactive, conta
 
 [Link to the GitHub Project board](https://github.com/users/StefFrustagli/projects/2/views/1)
 
-#### The design process: thinking through it
+### Problem Statement
+Through the years, I have 'liked' on Instagram and YouTube a large amount of reels and videos about Narcissism. During my recovery journey, these reels and videos played an important role - actually, I would say they were pivotal in my recovery.
+As we encounter a massive amount of information on social apps and may miss it, I wanted to make this material easily accessible, in one place, for those who might need it. 
+#### Proposed solution
+How to do that? This website was my answer. 
+The primary intent was to create a site, easy to navigate and interactive, containing all the material (or at least, at the beginning, some of it) that could be as helpful to others as it was for me.
+
+### The design process: thinking through it
 Originally, I planned to use a purple color palette since it felt neutral (the color also reminded me of vampires, and this creature would be perfectly associated with the theme).
 
 However, as I was building the site and researching images, I wasn't sure about the color anymore. My interest was piqued by an illustration with a red background, a black silhouette of a body, and white strings. The colour red conveys danger vibes and it would fit perfectly - but it was too 'strong' so I reverted to purple.
@@ -53,7 +61,9 @@ Purple is neutral - it appears calm - yet mysterious and enigmatic, so in my min
 
 The colour purple is also associated with healing, and healing from narcissistic abuse is the ultimate hope for my users and the reason why I built this site.
 
-#### Colour palettes
+DA AGGIUNGERE
+
+### Colour palettes
 
 ![Colour Palette](https://i.ibb.co/Rg9f3bt/my-screenshots-2024-03-18-at-07-53-23.png)
 
@@ -63,8 +73,54 @@ The colour purple is also associated with healing, and healing from narcissistic
 
 #7e3594, #ffffff, #594275
 
+### Wireframes
+Draft project plan:
 
-## User Experience
+![Wireframe created using Figma](https://i.ibb.co/HNTL86J/frame.png)
+
+Homepage [Desktop and mobile]:
+
+![Wireframe created using Balsamiq - Homepage](https://i.ibb.co/gdnFy5q/Homepage.png)
+
+About page [Desktop and mobile]:
+
+![Wireframe created using Balsamiq - About page](https://i.ibb.co/rxFKB1X/About-Page.png)
+
+Register page [Desktop and mobile]:
+
+![Wireframe created using Balsamiq - Register](https://i.ibb.co/tXQ79jS/Register.png)
+
+Login page [Desktop and mobile]:
+
+![Wireframe created using Balsamiq - Login](https://i.ibb.co/MCDhRzp/Login.png)
+
+Topic page template [Desktop and mobile]:
+
+![Wireframe created using Balsamiq - Topic template](https://i.ibb.co/mcj6PmK/Topic-template.png)
+
+Topic page example [Desktop and mobile]:
+
+![Wireframe created using Balsamiq - Topic example](https://i.ibb.co/JrFm6hp/Topic-example.png)
+
+Community page [Desktop and mobile]:
+
+![Wireframe created using Balsamiq - Community Page](https://i.ibb.co/vPq1gvF/Community-page.png)
+
+
+### Data Model
+ERD - first draft version:
+
+![ERD](https://i.ibb.co/c1XywtS/ERD-first-version.png)
+
+ERD - second version:
+
+![ERD second version](https://i.ibb.co/WWsS9Qv/my-screenshots-2024-03-23-at-14-14-37.png)
+
+Draft flowchart for apps organisation:
+![draft flowchart to organise apps](https://i.ibb.co/rZNXCF7/draft-apps-planning.png)
+
+
+### User Experience
 #### Ideal users:
 - Someone who has experienced or is experiencing this kind of abuse;
 - Someone who is interested in understanding more about Narcissism.
@@ -125,46 +181,7 @@ The colour purple is also associated with healing, and healing from narcissistic
 
 3 - As a potential victim of narcissistic abuse, I would appreciate the inclusion of personal narratives or testimonials from survivors who have overcome narcissistic relationships, inspiring hope and resilience among those currently struggling with similar challenges.
 
-#### Wireframes
-Draft project plan:
 
-![Wireframe created using Figma](https://i.ibb.co/HNTL86J/frame.png)
-
-Homepage [Desktop and mobile]:
-
-![Wireframe created using Balsamiq - Homepage](https://i.ibb.co/gdnFy5q/Homepage.png)
-
-About page [Desktop and mobile]:
-
-![Wireframe created using Balsamiq - About page](https://i.ibb.co/rxFKB1X/About-Page.png)
-
-Register page [Desktop and mobile]:
-
-![Wireframe created using Balsamiq - Register](https://i.ibb.co/tXQ79jS/Register.png)
-
-Login page [Desktop and mobile]:
-
-![Wireframe created using Balsamiq - Login](https://i.ibb.co/MCDhRzp/Login.png)
-
-Topic page template [Desktop and mobile]:
-
-![Wireframe created using Balsamiq - Topic template](https://i.ibb.co/mcj6PmK/Topic-template.png)
-
-Topic page example [Desktop and mobile]:
-
-![Wireframe created using Balsamiq - Topic example](https://i.ibb.co/JrFm6hp/Topic-example.png)
-
-Community page [Desktop and mobile]:
-
-![Wireframe created using Balsamiq - Community Page](https://i.ibb.co/vPq1gvF/Community-page.png)
-
-
-
-
-### Data Model
-ERD - first version:
-
-![ERD](https://i.ibb.co/c1XywtS/ERD-first-version.png)
 
 ## Features and functionalities
 
@@ -214,9 +231,26 @@ My goal is to make the site more visible once aesthetics are improved. I'll shar
 
 
 ## Technologies used
-DA MODIFICARE
-- [Python](https://www.python.org): Hight-level programming language used for the creation of the game.
+### Languages
+- Programming languages used in this project are **HTML5**, **CSS3**, **JavaSctipt** and **Python**.
+
+### Frameworks and Libraries
+- [Bootstrap:](https://getbootstrap.com/) Bootstrap CSS Framework used for styling and to build responsive web pages;
+- [Cloudinary:](https://cloudinary.com/) Used to store all blog images and uploaded images;
+- [Django:](https://www.djangoproject.com/) Main Python framework used in the development;
+- [Django Allauth:](https://django-allauth.readthedocs.io/en/latest/index.html) Used for authentication and account registration;
+- [Django Crispy Forms:](https://django-crispy-forms.readthedocs.io/en/latest/) Used to simplify the rendering of Django forms.
+- [Gunicorn:](https://gunicorn.org/) Python HTTP server, used as the Web Server to run Django on Heroku;
+- [Jest:](https://jestjs.io/) A delightful JavaScript Testing Framework, used for automated tests;
+- [Summernote:](https://github.com/summernote/django-summernote) To provide a WYSIWYG editor for customizing new blog content and add images.
+
+### Software and Web Applications
+- [Code Institute Postgres database](https://dbs.ci-dbs.net) was the Database used for this application.
+- [Chrome DevTools:](https://developer.chrome.com/docs/devtools/) Used to test the response on different screen sizes, debugging and to generate a Lighthouse report to analyze 
 - [PEP8](http://pep8online.com/) was used to check the code for PEP8 requirements.
+- [HTML Validator:](https://validator.w3.org/) Check your code for HTML validation.
+- [JSHint:](https://jshint.com/) Check code for JavaScript validation.
+ - [W3 CSS Validator:](https://jigsaw.w3.org/css-validator/) Check your code for CSS validation.
 - [Code Beautify - Python Beautifier](https://codebeautify.org/python-formatter-beautifier) was used to format the code.
 - [Heroku: Cloud Application Platform](https://dashboard.heroku.com/apps) was used for the deployment.
 - [Git](https://git-scm.com/) was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
