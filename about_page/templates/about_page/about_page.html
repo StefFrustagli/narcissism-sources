@@ -5,24 +5,26 @@
 {% block content %}
 <div class="container mt-5">
     <div class="row justify-content-center">
-        <div class="col-md-6">
-            
+        <div class="col-md-6 custom-background text-white text-justify card rounded-100 my-3 p-4">
                 <h2>{{ about_page.title }}</h2>
-                {{ about_page.content | safe }}            
+            {{ about_page.content | safe }}
         </div>
-        <div class="col-md-6">
-            <div class="text-center mb-4"> <!-- Add margin bottom -->
-                <h2>Leave a feedback</h2>
-                <p>Please feel free to leave feedback or a collaboration request if you are interested in this project.
-                    I have big plans, and I'll be happy to hear from you!</p>
-            </div>
-            <!-- add your form here. Your submit button should have the classes of btn, btn-secondary -->
-            <div class="text-center">
-                <form method="post">
-                    {{ collaborate_form | crispy }}
-                    {% csrf_token %}
-                    <button class="btn btn-secondary" type="submit">Submit</button>
-                </form>
+        <div class="col-md-6 border border-4 mb-4 mx-4 card rounded-100">
+            <div class="card my-4">
+                <div class="text-center mb-4"> <!-- Add margin bottom -->
+                    <h2>Get in touch <span class="form-custom-word">:)</span></h2>
+                    <p>Feel free to leave <span class="form-custom-word">feedback</span> or a <span
+                            class="form-custom-word">collaboration request</span>. </br>
+                        I have big plans and I'll be happy to hear from you!</p>
+                </div>
+                <!-- Form -->
+                <div class="text-center">
+                    <form method="post">
+                        {{ collaborate_form | crispy }}
+                        {% csrf_token %}
+                        <button class="btn btn-form" type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

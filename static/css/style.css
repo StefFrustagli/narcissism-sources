@@ -141,7 +141,15 @@ body {
 }
 
 
+.custom-background {
+  background-color: #b09cc6;
+}
 
+.form-custom-word {
+  color: #9a86b1;
+  font-weight: 500;
+
+}
 
 .btn-signup {
   background-color: #9351ff;
@@ -171,6 +179,17 @@ body {
 
 .btn-secondary:hover {
   background-color: #9351ff;
+  color: #fff;
+}
+
+/* Submit button form */
+.btn-form {
+  background-color: #9a86b1;
+  color: #fff;
+}
+
+.btn-form:hover {
+    background-color: #9975c2;
   color: #fff;
 }
 
