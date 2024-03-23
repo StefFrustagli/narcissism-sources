@@ -312,8 +312,7 @@ It should be noted that all changes pushed to the main branch are automatically 
 DA AGGIUNGERE
 
 ### Code
-
-DA AGGIUNGERE
+The code was mainly based on Code Institute's walkthrough of the Django project. This is my first time using technologies such as Django and Bootstrap, so getting started has been challenging, but my goal is to make the code better going forward.
 
 ### Acknowledgment
 
