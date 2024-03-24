@@ -11,11 +11,11 @@
 
 <head>
     <!-- Title -->
-    <title>Narcissism Personality Disorder: social resources</title>
+    <title>Narcissism Personality Disorder: Social Resources</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
     <link rel="manifest" href="static/favicon/site.webmanifest">
@@ -95,7 +95,7 @@
                     {% endif %}
                 </ul>
                 <span class="navbar-text text-muted another-colour">
-                    Educate yourself and break free
+                    | Educate yourself and break free 
                 </span>
             </div>
         </div>
@@ -114,7 +114,6 @@
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
                 {% endfor %}
-
             </div>
         </div>
     </div>
@@ -124,7 +123,7 @@
         <p class="text-end m-3">You are logged in as {{ user }} </p>
 
         {% else %}
-        <p class="text-end m-3">You are not logged in </p>
+        <p class="text-end m-3">You are not logged in. </br>Login <a href="{% url 'account_login' %}">here</a>.</p>
         {% endif %}
 
         {% block content %}
