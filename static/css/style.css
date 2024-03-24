@@ -10,8 +10,9 @@ body {
   color: #4a4a4f;
 }
 
-.another-colour, .text-muted {
-  color: #9D88B3 !important;
+.another-colour,
+.text-muted {
+  color: #9d88b3 !important;
 }
 
 .purple-part {
@@ -44,29 +45,26 @@ body {
 }
 
 .card-title {
-      font-size: 1.66rem;
+  font-size: 1.66rem;
 }
 
 .card-text {
   font-size: 1rem;
-
 }
 
 .card-body {
-    flex: 1 1 auto;
-    padding: 1rem 1rem;
-    
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
 }
 
 .card-topic-title {
   width: min-content;
-
 }
 
 /* Topic image */
 .image-container {
   /* position: relative; */
-  width:13rem;
+  width: 13rem;
   height: 13rem;
 }
 
@@ -133,7 +131,6 @@ body {
 
 .topic-title {
   margin-top: 5%;
-  /* margin-left: 5%; */
 }
 
 .topic-subtitle {
@@ -141,19 +138,23 @@ body {
   color: lightgray;
 }
 
+/* Title reel */
 .title-resource {
-  font-size: 1.5rem;
+  background-color: #7f5ea3;
+  font-size: 1.3rem;
+  color: #ffffff;
+  text-transform:uppercase;
+  padding:0.70rem;
+  border-radius: 0.25rem;
 }
 
-
 .custom-background {
-  background-color: #b09cc6;
+  background-color: #664984;
 }
 
 .form-custom-word {
   color: #9a86b1;
   font-weight: 500;
-
 }
 
 .btn-signup {
@@ -194,7 +195,7 @@ body {
 }
 
 .btn-form:hover {
-    background-color: #9975c2;
+  background-color: #9975c2;
   color: #fff;
 }
 
@@ -214,7 +215,7 @@ body {
 
 .btn-like {
   color: #9d88b3;
-  border: none; 
+  border: none;
   background: transparent;
 }
 
@@ -237,7 +238,7 @@ body {
   border: none;
 }
 
-.alert{
+.alert {
   background-color: #692fc8;
   color: #fff;
 }
@@ -252,5 +253,5 @@ body {
 
 /* Error pages */
 .underline-link {
-    text-decoration: underline;
+  text-decoration: underline;
 }
