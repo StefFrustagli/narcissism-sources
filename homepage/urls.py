@@ -14,4 +14,9 @@ urlpatterns = [
         views.comment_delete,
         name="comment_delete",
     ),
+    path(
+        "<slug:slug>/content_list/",  # URL pattern for ContentList view
+        views.ContentList.as_view(),  # Using the ContentList view
+        name="content_list",  # Name for the URL pattern
+    ),
 ]

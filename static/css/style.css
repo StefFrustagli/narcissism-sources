@@ -119,11 +119,16 @@ body {
 }
 
 .topic-link:hover {
-  color: #692fc8;
+  color: #b09cc6;
 }
 
 .page-link {
-  color: #445261;
+  color: #583681;
+  border-radius: 10px;
+}
+
+.page-link:hover {
+  color: #935bd0;
 }
 
 .topic-title {
@@ -152,7 +157,7 @@ body {
 }
 
 .btn-signup {
-  background-color: #9351ff;
+  background-color: #594275;
   color: #fff;
 }
 

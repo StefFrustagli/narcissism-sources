@@ -21,7 +21,7 @@
         <div class="col card mb-4  mt-3 left  top">
             <div class="card-body">
                 <div class="row">
-                    {% for content in topic.content_set.all %}
+                    {% for content in content_page %}
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                         {% include 'content_management/resource_detail.html' %}
                     </div>
@@ -29,8 +29,19 @@
                 </div>
             </div>
         </div>
-
     </div>
+    {% if content_page.has_other_pages %}
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            {% if content_page.has_previous %}
+            <li><a href="?page={{ content_page.previous_page_number }}" class="page-link"> PREV &laquo;</a></li>
+            {% endif %}
+            {% if content_page.has_next %}
+            <li><a href="?page={{ content_page.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    {% endif %}
     <!-- Displaying count of comments -->
     <div class="row">
         <div class="col-12">
@@ -97,6 +108,9 @@
         </div>
     </div>
 </div>
+
+
+
 <!-- Delete confirmation modal -->
 <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
     <div class="modal-dialog">
