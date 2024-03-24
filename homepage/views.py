@@ -28,7 +28,7 @@ class TopicList(generic.ListView):
 
 class ContentList(generic.ListView):
     template_name = "homepage/topic_detail.html"
-    paginate_by = 6
+    paginate_by = 3
 
     def get_queryset(self):
         # Get the topic based on the slug in the URL
@@ -58,7 +58,7 @@ def topic_detail(request, slug):
 
     # Paginate content related to the topic
     content_list = topic.content_set.all()
-    paginator = Paginator(content_list, 6)  # 6 items per page
+    paginator = Paginator(content_list, 3)  # 6 items per page
     page_number = request.GET.get("page")
     try:
         content_page = paginator.page(page_number)
