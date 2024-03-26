@@ -123,7 +123,7 @@
         <p class="text-end m-3">You are logged in as {{ user }} </p>
 
         {% else %}
-        <p class="text-end m-3">You are not logged in. </br>Login <a href="{% url 'account_login' %}">here</a>.</p>
+        <p class="text-end m-3">You are not logged in. </br>Log <a href="{% url 'account_login' %}">here</a>.</p>
         {% endif %}
 
         {% block content %}
