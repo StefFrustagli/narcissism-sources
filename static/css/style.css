@@ -157,7 +157,8 @@ body {
   font-weight: 500;
 }
 
-.btn-signup {
+.btn-signup, 
+.btn-cancel {
   background-color: #594275;
   color: #fff;
 }
@@ -173,7 +174,8 @@ body {
 }
 
 .btn-signup:hover,
-.btn-signup:active {
+.btn-signup:active,
+.btn-cancel:hover {
   background-color: #692fc8;
   color: #fff;
 }

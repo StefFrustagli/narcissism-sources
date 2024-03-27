@@ -207,7 +207,7 @@ body {
 
 .link:hover {
   color: #8c70aa;
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 .link:active {
