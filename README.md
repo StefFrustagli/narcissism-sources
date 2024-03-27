@@ -1,18 +1,22 @@
 # Narcissistic Personality Disorder: Social Resources
+
 Developer: Stefania Frustagli
 
 ## Website Overview
-The purpose of this website is to provide a centralized repository of resources from social media related to understanding narcissistic and violent behaviors. By incorporating reels from platforms, like Instagram and YouTube,  this project aims to shed light on subtle and recurrent abuse patterns. 
+
+The purpose of this website is to provide a centralized repository of resources from social media related to understanding narcissistic and violent behaviors. By incorporating reels from platforms, like Instagram and YouTube, this project aims to shed light on subtle and recurrent abuse patterns.
 My goal is to raise awareness about these patterns, empowering individuals to recognize and protect themselves from toxic influences, ultimately leading to a better quality of life.
+
 #### Why Narcissism awareness?
-This is a very personal project. I wanted to share all the material I found helpful during the years. 
-I strongly believe in the importance of education. Narcissistic abuse, or violent behaviours, can be insidious and difficult to identify, so it's crucial to have prevention and recovery plans. Through this project, I hope to facilitate discussions and provide valuable insights into narcissistic behaviors, helping individuals understand and navigate their experiences more effectively.
+
+This is a very personal project. I wanted to share all the material I found helpful during the years.
+I strongly believe in the importance of education. Narcissistic abuse, or violent behaviours in general, can be insidious and difficult to identify, so it's crucial to have prevention and recovery plans. Through this project, I hope to facilitate discussions and provide valuable insights into narcissistic behaviors, helping individuals understand and navigate their experiences more effectively.
 
 View the live project [here](https://narcissism-website-8191a44972de.herokuapp.com/).
 
 Responsive Mockup: ![Responsive Mockup]() AGGIUNGI MOCKUP
 
-## Table of Contents DA MODIFICARE 
+## Table of Contents DA MODIFICARE
 
 - [Website Overview](#website-overview)
 - [Project background & User Experience](#project-background--user-experience)
@@ -27,32 +31,37 @@ Responsive Mockup: ![Responsive Mockup]() AGGIUNGI MOCKUP
 - [Features and functionalities](#features-and-functionalities)
   - [Current Feature](#current-features)
   - [Future Feature](#future-features-and-general-aspects-left-to-implement)
-- [Technologies used](#technologies-used)  
+- [Technologies used](#technologies-used)
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [Credits](#credits)
 
+## Project background & Development
 
-
-
-## Project background & User Experience
 ### Agile Development
-- The development process was carried out using Agile methodology with a focus on continuous improvement.
 
-- The project was managed using a GitHub Project board with user stories and tasks.
+The development process for this project followed Agile methodology, emphasizing continuous improvement throughout the development lifecycle.
 
-- User Stories were differentiated in EPIC A, B, C, D, E and F according to users' type and content specificity. They were prioritised based on the MoSCoW method (Must have, Should have, Could have, Won't have).
+**Project Management**: I utilized GitHub Project boards to manage tasks, user stories, and project progression effectively.
+
+**User Stories**: User stories were categorized into EPICs A, B, C, D, E, and F based on user types and content specificity. I prioritized these user stories using the MoSCoW method, which categorizes requirements into Must have, Should have, Could have, and Won't have categories based on their importance and urgency.
+
+**Continuous Improvement**: Despite working solo on this project, I actively sought ways to enhance development processes and product quality. Regular retrospectives allowed me to reflect on past work, pinpoint areas for improvement, and brainstorm solutions. 
 
 [Link to the GitHub Project board](https://github.com/users/StefFrustagli/projects/2/views/1)
 
 ### Problem Statement
+
 Through the years, I have 'liked' on Instagram and YouTube a large amount of reels and videos about Narcissism. During my recovery journey, these reels and videos played an important role - actually, I would say they were pivotal in my recovery.
-As we encounter a massive amount of information on social apps and may miss it, I wanted to make this material easily accessible, in one place, for those who might need it. 
+As we encounter a massive amount of information on social apps and may miss it, I wanted to make this material easily accessible, in one place, for those who might need it.
+
 #### Proposed solution
-How to do that? This website was my answer. 
+
+How to do that? This website was my answer.
 The primary intent was to create a site, easy to navigate and interactive, containing all the material (or at least, at the beginning, some of it) that could be as helpful to others as it was for me.
 
 ### The design process: thinking through it
+
 Originally, I planned to use a purple color palette since it felt neutral (the color also reminded me of vampires, and this creature would be perfectly associated with the theme).
 
 However, as I was building the site and researching images, I wasn't sure about the color anymore. My interest was piqued by an illustration with a red background, a black silhouette of a body, and white strings. The colour red conveys danger vibes and it would fit perfectly - but it was too 'strong' so I reverted to purple.
@@ -74,6 +83,7 @@ DA AGGIUNGERE
 #7e3594, #ffffff, #594275
 
 ### Wireframes
+
 Draft project plan:
 
 ![Wireframe created using Figma](https://i.ibb.co/HNTL86J/frame.png)
@@ -106,8 +116,8 @@ Community page [Desktop and mobile]:
 
 ![Wireframe created using Balsamiq - Community Page](https://i.ibb.co/vPq1gvF/Community-page.png)
 
-
 ### Data Model
+
 ERD - first draft version:
 
 ![ERD](https://i.ibb.co/c1XywtS/ERD-first-version.png)
@@ -119,30 +129,36 @@ ERD - second version:
 Draft flowchart for apps organisation:
 ![draft flowchart to organise apps](https://i.ibb.co/rZNXCF7/draft-apps-planning.png)
 
+## User Experience
 
-### User Experience
 #### Ideal users:
+
 - Someone who has experienced or is experiencing this kind of abuse;
 - Someone who is interested in understanding more about Narcissism.
 
 #### As a developer, I expect:
+
 - the user to have easy navigation of all the content in the website;
 - the user to find the website appealing and informative in a different way than a search engine;
 - the user to find the content helpful and find support during their awareness journey or/and recovery process.
 
 ### User Stories: Site accessibility & functionality
-#### [EPIC A] Simple viewers (users not logged in) 
+
+#### [EPIC A] Simple viewers (users not logged in)
+
 1 - As a simple viewer of the site (not registered or logged in), I expect to have access to all the information and sources available on the website, so that I can explore and gain insights about the site.
 
 2 - As a simple site viewer, I want to have the ability to register or log into the website, so that I can access the exclusive content in the community page and engage more actively with the site's features.
 
 3 - As a site viewer, I want to be able to log in and contribute by posting and editing my comments on community and topic pages, fostering a sense of participation and collaboration within the website community.
 
-#### [EPIC A] Potential Collaborators (users not logged in) 
-4 - As a potential collaborator, I seek a straightforward contact form on the About page, so that I can have a convenient means to submit collaboration requests to the site creator, without having to set up an account. 
+#### [EPIC A] Potential Collaborators (users not logged in)
 
-#### [EPIC B] Registered users 
-1 -  As a logged-in user, I require access to the comment functionality, so that I can post, edit, and update my comments to  engage and discuss within the website community.
+4 - As a potential collaborator, I seek a straightforward contact form on the About page, so that I can have a convenient means to submit collaboration requests to the site creator, without having to set up an account.
+
+#### [EPIC B] Registered users
+
+1 - As a logged-in user, I require access to the comment functionality, so that I can post, edit, and update my comments to engage and discuss within the website community.
 
 2 - As a logged-in user, I expect to be able to read all approved comments, so that I can fully utilise the interactive features of the site and stay informed about contributions from other users.
 
@@ -150,9 +166,10 @@ Draft flowchart for apps organisation:
 
 4 - As a logged-in user, I appreciate the ability to reset my password, so that I can regain access to the website in the event that I forget my login details.
 
-5 - As a logged-in user, I can log out so that I can protect my account's security and privacy by securely ending my session and preventing unauthorized access to my account. 
+5 - As a logged-in user, I can log out so that I can protect my account's security and privacy by securely ending my session and preventing unauthorized access to my account.
 
-#### [EPIC C] Admin Users 
+#### [EPIC C] Admin Users
+
 1 - As a site administrator, I need the capability to select and add sources to the website, so that I can keep the content updated and relevant, enhancing the overall quality and value of the site to users.
 
 2 - As a site administrator, I require the ability to update and edit website content, so that I can manage and maintain the accuracy, clarity, and relevance of the information presented to users.
@@ -160,33 +177,37 @@ Draft flowchart for apps organisation:
 3 - As a site administrator, I can approve or disapprove comments, ensuring that objectionable content is filtered out and the website maintains a respectful and constructive environment for all users.
 
 ### User Stories: Content specificity
-#### [EPIC D] Casual visitor 
+
+#### [EPIC D] Casual visitor
+
 1 - As a casual visitor, I can look at different material about narcissistic personality disorder so that I can gain insight into the subject.
 
 2 - As a casual visitor, I want to be able to browse through different materials about narcissistic personality disorder so that I can gain insight into the subject without feeling overwhelmed or lost.
 
 3 - As a casual visitor, I expect to understand the topic and scope of the website clearly so that I can make an informed decision about whether to explore it further or not.
 
-4 - As a casual visitor,  I expect an intuitive and user-friendly navigation system on the website so that I can effortlessly explore all sections and find relevant information without frustration.
+4 - As a casual visitor, I expect an intuitive and user-friendly navigation system on the website so that I can effortlessly explore all sections and find relevant information without frustration.
 
-#### [EPIC E] Someone interested in Narcissism 
+#### [EPIC E] Someone interested in Narcissism
+
 1 - As someone interested in narcissism, I expect to have convenient access to a diverse range of sources gathered in one place, providing me with insights and perspectives not readily available through mainstream search engines like Google.
 
 2 - As someone interested in narcissism, I expect the website to offer a community forum or discussion board where like-minded individuals can share experiences, exchange insights, and support each other in coping with narcissistic relationships or behaviours.
 
-#### [EPIC F] Potential victim of Narcissistic abuse 
+#### [EPIC F] Potential victim of Narcissistic abuse
+
 1 - As a potential victim of narcissistic behaviour, I seek resources and information on the website that can help me recognise and understand the signs of narcissistic abuse, empowering me to take necessary steps to protect myself and seek support if needed.
 
 2 - As a potential victim of narcissistic abuse, I seek practical resources on the website, such as checklists for identifying red flags, coping strategies for dealing with manipulation tactics, and links to support groups or helplines for seeking assistance and guidance.
 
 3 - As a potential victim of narcissistic abuse, I would appreciate the inclusion of personal narratives or testimonials from survivors who have overcome narcissistic relationships, inspiring hope and resilience among those currently struggling with similar challenges.
 
-
-
 ## Features and functionalities
 
 ### Current Features
+
 DA FINIRE
+
 - **Homepage**
 
 - **About page**
@@ -196,7 +217,7 @@ DA FINIRE
 - **Navbar**
 
 - **Comment section & comment functionalities**
-ADD, EDIT, DELETE COMMENT below the topic page
+  ADD, EDIT, DELETE COMMENT below the topic page
 
 - **Topic page with content**
 
@@ -208,33 +229,39 @@ ADD, EDIT, DELETE COMMENT below the topic page
 
 - **Feedback form**
 
+- **Admin board**
+
 - **Favicon**
 
 - **Error pages**
 
-
 ### Future Features and general aspects left to implement
-This is only the first version of a big project I have in mind. Find some of the future aspects left to implement below:
 
-- **Graphics & content organisation**: 
-In order to make the website professional and appealing, the graphic needs to be improved. I plan to hire an illustrator to design the topic images for the homepage or to do them myself.
-In addition, I would like to improve the navigation with tags and organize the content more attractively.
+I have a big project in mind, and this is just the first version. The following are some of the future aspects that still need to be implemented:
+
+- **Graphics & content organisation**:
+  In order to make the website professional and appealing, the graphic needs to be improved. I'm considering two approaches for enhancing the homepage: I may hire an illustrator to design topic images or, alternatively, creating these images myself.
+  Additionally, I would like to improve the navigation with tags and organize the content more attractively.
+
+- **User account**:
+  One of the plans is to expand the functionalities available to users, aiming to streamline their experience. This would involve creating a dedicated user account page where users can manage their account settings and comments conveniently. Additionally, they will have options to delete their account and reset their password for added control over their personal information. 
 
 - **Community page & comment app**:
-You can see a comments app because I am planning to create a community page, an essential element of the website, as sharing is a fundamental step in the healing process.
-To build the foundation for my future features, I decided to have an app to manage user interactions in my future community page.
+  I've included a comments app as part of the website, laying the groundwork for a future community page. Even though its relevance may not be immediately apparent, this is important in the future direction of the platform. Sharing is a crucial aspect of the healing process, and having a platform for users to interact will be integral to the site's purpose. The comments app serves as an essential feature to manage user interactions and foster community engagement. This decision was made to establish a foundation for future features and enhance the overall user experience of the website.
 
-- **Collaborations & courses**: 
-My goal is to make the site more visible once aesthetics are improved. I'll share it on channels/platforms where the subject is discussed. My plan is to contact professionals who deal with the topic and arrange courses for users.
+- **Collaborations & courses**:
+  My primary objective is to enhance the site's visibility by focusing on aesthetic improvements. Once these enhancements are in place, I intend to promote the site on relevant channels and platforms where discussions related to the subject matter take place. My plan is to contact professionals to collaborate on content or offer courses tailored to users' interests and needs. 
 
-- **Error pages** are present in the website but the design  was left to implement.
-
+- **Error pages** are present in the website but the design was left to implement.
 
 ## Technologies used
-### Languages
+
+### Programming Languages
+
 - Programming languages used in this project are **HTML5**, **CSS3**, **JavaSctipt** and **Python**.
 
 ### Frameworks and Libraries
+
 - [Bootstrap:](https://getbootstrap.com/) Bootstrap CSS Framework used for styling and to build responsive web pages;
 - [Cloudinary:](https://cloudinary.com/) Used to store all blog images and uploaded images;
 - [Django:](https://www.djangoproject.com/) Main Python framework used in the development;
@@ -245,12 +272,13 @@ My goal is to make the site more visible once aesthetics are improved. I'll shar
 - [Summernote:](https://github.com/summernote/django-summernote) To provide a WYSIWYG editor for customizing new blog content and add images.
 
 ### Software and Web Applications
+
 - [Code Institute Postgres database](https://dbs.ci-dbs.net) was the Database used for this application.
-- [Chrome DevTools:](https://developer.chrome.com/docs/devtools/) Used to test the response on different screen sizes, debugging and to generate a Lighthouse report to analyze 
+- [Chrome DevTools:](https://developer.chrome.com/docs/devtools/) Used to test the response on different screen sizes, debugging and to generate a Lighthouse report to analyze
 - [PEP8](http://pep8online.com/) was used to check the code for PEP8 requirements.
 - [HTML Validator:](https://validator.w3.org/) Check your code for HTML validation.
 - [JSHint:](https://jshint.com/) Check code for JavaScript validation.
- - [W3 CSS Validator:](https://jigsaw.w3.org/css-validator/) Check your code for CSS validation.
+- [W3 CSS Validator:](https://jigsaw.w3.org/css-validator/) Check your code for CSS validation.
 - [Code Beautify - Python Beautifier](https://codebeautify.org/python-formatter-beautifier) was used to format the code.
 - [Heroku: Cloud Application Platform](https://dashboard.heroku.com/apps) was used for the deployment.
 - [Git](https://git-scm.com/) was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
@@ -262,16 +290,17 @@ My goal is to make the site more visible once aesthetics are improved. I'll shar
 - [Table Convert](https://tableconvert.com/) was used to generate tables for the TESTING.md file.
 - [ChatGPT](https://chat.openai.com/) was used as helpful tool during the debugging process.
 
-
 ## Modules imported AGGIUNGI MODULI
+
 The three modules used are part of the Python Standard Library. DA MODIFICARE
-- **Random Module**: 
-- **String Module**: 
-- **Sys Module**: 
+
+- **Random Module**:
+- **String Module**:
+- **Sys Module**:
 
 ## Testing
 
-Testing information can be found in [TESTING.md file](TESTING.md). AGGINGI TESTING
+Testing information can be found in [TESTING.md file](TESTING.md).
 
 ## Deployment
 
@@ -292,6 +321,7 @@ Heroku was used to deploy the site. Here are the steps to deploy:
 The live site can be found here: [Narcissistic Website]() AGGIUNGI LINK
 
 ### Cloning:
+
 1. Click the "Code" button in the GitHub repository.
 2. Choose "HTTPS" and copy the URL.
 3. Open the Terminam (in macOS) or Git Bash (in Windows) and navigate to the repository where you would like to locate the cloned repository.
@@ -299,6 +329,7 @@ The live site can be found here: [Narcissistic Website]() AGGIUNGI LINK
 5. Press enter to create the clone.
 
 ### Forking
+
 You can fork this project and make a copy of the original repository in your own GitHub account. In this case, you can view or make changes without affecting the original. To do so:
 
 - log into GitHub and locate the GitHub Repository;
@@ -306,14 +337,16 @@ You can fork this project and make a copy of the original repository in your own
 
 It should be noted that all changes pushed to the main branch are automatically reflected on the site.
 
-
 ## Credits
+
 ### Content
+
 DA AGGIUNGERE
 
 ### Code
+
 The code was mainly based on Code Institute's walkthrough of the Django project. This is my first time using technologies such as Django and Bootstrap, so getting started has been challenging, but my goal is to make the code better going forward.
 
 ### Acknowledgment
 
-I am very grateful to my mentor Brian Macharia for his suggestions, and to my classmate Niclas for his precious support and help. 
+I am very grateful to my mentor Brian Macharia for his suggestions, and to my classmate Niclas for his precious support and help.
