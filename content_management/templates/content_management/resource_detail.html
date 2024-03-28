@@ -5,7 +5,7 @@
     <!-- Use Instagram embed template. Inject the identifier using {{ content.source_identifier }} -->
     <div class="title-resource">{{ content.title | safe }}</div>
     {{ content.embed_code | safe }}
-    <!-- Add Instagram embed script here, only when source is Instagram -->
+    <!-- Instagram embed script -->
     <script async src="//www.instagram.com/embed.js"></script>
 
     {% elif content.source == 'youtube' %}
