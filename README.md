@@ -9,8 +9,8 @@ My goal is to raise awareness about these patterns, empowering individuals to re
 
 #### Why Narcissism awareness?
 
-This is a very personal project. I wanted to share all the material I found helpful during the years.
-I strongly believe in the importance of education. Narcissistic abuse, or violent behaviours in general, can be insidious and difficult to identify, so it's crucial to have prevention and recovery plans. Through this project, I hope to facilitate discussions and provide valuable insights into narcissistic behaviors, helping individuals understand and navigate their experiences more effectively.
+This is a very personal project. I wanted to share all the material I found helpful during the years as a 'survivor'.
+I strongly believe in the importance of education: narcissistic abuse, or violent behaviours in general, can be insidious and difficult to identify, so it's crucial to have prevention and recovery plans. Through this project, I hope to facilitate discussions and provide valuable insights into narcissistic behaviors, helping individuals understand and navigate their experiences more effectively. 
 
 View the live project [here](https://narcissism-website-8191a44972de.herokuapp.com/).
 
@@ -36,13 +36,13 @@ Responsive Mockup: ![Responsive Mockup]() AGGIUNGI MOCKUP
 - [Deployment](#deployment)
 - [Credits](#credits)
 
-## Project background & Development
+## Project background 
 
 ### Agile Development
 
 The development process for this project followed Agile methodology, emphasizing continuous improvement throughout the development lifecycle.
 
-**Project Management**: I utilized GitHub Project boards to manage tasks, user stories, and project progression effectively.
+**Project Management**: I utilised GitHub Project boards to manage tasks, user stories, and project progression effectively.
 
 **User Stories**: User stories were categorized into EPICs A, B, C, D, E, and F based on user types and content specificity. I prioritized these user stories using the MoSCoW method, which categorizes requirements into Must have, Should have, Could have, and Won't have categories based on their importance and urgency.
 
@@ -51,14 +51,9 @@ The development process for this project followed Agile methodology, emphasizing
 [Link to the GitHub Project board](https://github.com/users/StefFrustagli/projects/2/views/1)
 
 ### Problem Statement
+In the past few years, I have liked a large number of reels and videos about narcissism on Instagram and YouTube. These videos played a crucial role in my awareness journey - I believe they were pivotal to my recovery. But this material was somehow 'hidden' or lost in a sea of information on social apps, and I felt it was chaotic. I wanted to make this helpful material organised in one place and easily accessible to those who could benefit from it. It might have helped someone else as well.
 
-Through the years, I have 'liked' on Instagram and YouTube a large amount of reels and videos about Narcissism. During my recovery journey, these reels and videos played an important role - actually, I would say they were pivotal in my recovery.
-As we encounter a massive amount of information on social apps and may miss it, I wanted to make this material easily accessible, in one place, for those who might need it.
-
-#### Proposed solution
-
-How to do that? This website was my answer.
-The primary intent was to create a site, easy to navigate and interactive, containing all the material (or at least, at the beginning, some of it) that could be as helpful to others as it was for me.
+**Proposed solution**: What can I do to accomplish that? My answer was this website. The primary intent was to create a site, easy to navigate and interactive, containing all the material (or at least some of it) that could be as helpful to others as much as it was tor me.
 
 ### The design process: thinking through it
 
@@ -66,7 +61,7 @@ Originally, I planned to use a purple color palette since it felt neutral (the c
 
 However, as I was building the site and researching images, I wasn't sure about the color anymore. My interest was piqued by an illustration with a red background, a black silhouette of a body, and white strings. The colour red conveys danger vibes and it would fit perfectly - but it was too 'strong' so I reverted to purple.
 
-Purple is neutral - it appears calm - yet mysterious and enigmatic, so in my mind it still evokes the alert feeling I want to reproduce. And as I said, it reminds me of vampires. The appropriate analogy with vampires and narcissism will be used at some point; I'm not sure how yet.
+Purple is neutral - it appears calm - yet mysterious and enigmatic, so in my mind it still evokes the alert feeling I wanted to reproduce. And as I said, it reminds me of vampires. The appropriate analogy with vampires and narcissism will be used at some point; I'm not sure how yet.
 
 The colour purple is also associated with healing, and healing from narcissistic abuse is the ultimate hope for my users and the reason why I built this site.
 
@@ -246,13 +241,13 @@ I have a big project in mind, and this is just the first version. The following 
 - **User account**:
   One of the plans is to expand the functionalities available to users, aiming to streamline their experience. This would involve creating a dedicated user account page where users can manage their account settings and comments conveniently. Additionally, they will have options to delete their account and reset their password for added control over their personal information. 
 
-- **Community page & comment app**:
-  I've included a comments app as part of the website, laying the groundwork for a future community page. Even though its relevance may not be immediately apparent, this is important in the future direction of the platform. Sharing is a crucial aspect of the healing process, and having a platform for users to interact will be integral to the site's purpose. The comments app serves as an essential feature to manage user interactions and foster community engagement. This decision was made to establish a foundation for future features and enhance the overall user experience of the website.
+- **Community page & comment app (or 'why did you create a Comments app?')**:
+  I've included a comments app because I was laying the groundwork for a future community page. Even though its relevance may not be immediately apparent at the current state of the website, this is important in the future direction of the platform. Sharing is a crucial aspect of the healing process, and having a platform for users to interact will be integral to the site's purpose. The comments app will serve as an essential feature to manage user interactions and foster community engagement. This decision was made to establish a foundation for future features and enhance the overall user experience.
 
 - **Collaborations & courses**:
-  My primary objective is to enhance the site's visibility by focusing on aesthetic improvements. Once these enhancements are in place, I intend to promote the site on relevant channels and platforms where discussions related to the subject matter take place. My plan is to contact professionals to collaborate on content or offer courses tailored to users' interests and needs. 
+  My primary objective is to better the site's visibility by focusing on aesthetic improvements. Once these enhancements are in place, I intend to promote the site on relevant channels and platforms where discussions related to the subject take place. My plan is to contact professionals to collaborate on content and offer courses tailored to users' interests and needs. 
 
-- **Error pages** are present in the website but the design was left to implement.
+- **Error pages** are present in the website but the design is left to implement.
 
 ## Technologies used
 
@@ -290,13 +285,32 @@ I have a big project in mind, and this is just the first version. The following 
 - [Table Convert](https://tableconvert.com/) was used to generate tables for the TESTING.md file.
 - [ChatGPT](https://chat.openai.com/) was used as helpful tool during the debugging process.
 
-## Modules imported AGGIUNGI MODULI
+## Modules imported 
 
-The three modules used are part of the Python Standard Library. DA MODIFICARE
-
-- **Random Module**:
-- **String Module**:
-- **Sys Module**:
+- **django.contrib**: Django modules for various functionalities like admin.
+- **django.urls**: Django module for URL routing.
+- **pathlib**: Module for working with file paths.
+- **os**: Module for interacting with the operating system.
+- **sys**: Module providing access to some variables used or maintained by the Python interpreter.
+- **dj_database_url**: Module for parsing database connection URLs.
+- **django.shortcuts**: Django module for shortcuts to common actions.
+- **django.core.paginator**: Django module for pagination.
+- **django.contrib.auth.decorators**: Django module for authentication-related decorators.
+- **django.views.generic**: Django module for generic views.
+- **django.contrib.messages**: Django module for displaying messages to users.
+- **comments.models**: Custom module for comment models.
+- **content_management.models**: Custom module for content models.
+- **django.forms**: Django module for form handling.
+- **django.contrib.auth.models**: Django module for authentication-related models.
+- **django.utils**: Django module with various utility functions.
+- **django.test**: Django module for testing utilities.
+- **cloudinary.models**: Module for integrating Cloudinary with Django models.
+- **django_summernote.admin.SummernoteModelAdmin**: Module for integrating Summernote with Django admin for model forms.
+- **django.shortcuts.render**: Django module for rendering templates.
+- **.models.About**: Custom module for About model.
+- **.forms.CollaborateForm**: Custom module for CollaborateForm.
+- **django.test.TestCase**: Django module for creating test cases.
+- **.models.CollaborateRequest**: Custom module for CollaborateRequest model.
 
 ## Testing
 
@@ -337,6 +351,8 @@ You can fork this project and make a copy of the original repository in your own
 
 It should be noted that all changes pushed to the main branch are automatically reflected on the site.
 
+## Database COME CREARLO DA AGGIUNGERE
+
 ## Credits
 
 ### Content
@@ -345,8 +361,8 @@ DA AGGIUNGERE
 
 ### Code
 
-The code was mainly based on Code Institute's walkthrough of the Django project. This is my first time using technologies such as Django and Bootstrap, so getting started has been challenging, but my goal is to make the code better going forward.
+The code was mainly based on Code Institute's walkthrough of the Django project. This is my first time using technologies such as Django and Bootstrap, so it has been challenging, but my goal is to make the code better going forward.
 
 ### Acknowledgment
 
-I am very grateful to my mentor Brian Macharia for his suggestions, and to my classmate Niclas for his precious support and help.
+I am very grateful to my mentor Brian Macharia for his suggestions, and to my classmate Niclas for his precious support and help. Also, a special thanks goes to the amazing tool that is ChatGPT: it helped me with the debugging process and whenever I got stuck.
