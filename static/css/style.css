@@ -68,16 +68,9 @@ body {
   height: 13rem;
 }
 
-/* .scale {
-  width: 100%;
-  height: auto;
+.image-container:hover {
+  border: 4px solid #fff;
 }
-
-.author {
-  color: white;
-  margin: 4px;
-  text-transform: uppercase;
-} */
 
 .masthead {
   margin-top: 0.4rem;
@@ -113,11 +106,30 @@ body {
 
 .topic-link {
   text-decoration: none;
+}
+
+.card-title {
+  text-decoration: none;
   color: #445261;
 }
 
-.topic-link:hover {
+.image-container:hover img {
+  border: 1px solid #fff;
+  transform: scale(0.95);
+}
+
+.image-container:hover + .card-title {
   color: #b09cc6;
+  font-weight: 500;
+} 
+
+.card-title:hover {
+  color: #b09cc6;
+  font-weight: 500;
+} 
+
+.card-text {
+  color: #445261;
 }
 
 .page-link {
@@ -143,8 +155,8 @@ body {
   background-color: #7f5ea3;
   font-size: 1.3rem;
   color: #ffffff;
-  text-transform:uppercase;
-  padding:0.70rem;
+  text-transform: uppercase;
+  padding: 0.7rem;
   border-radius: 0.25rem;
 }
 
@@ -157,7 +169,7 @@ body {
   font-weight: 500;
 }
 
-.btn-signup, 
+.btn-signup,
 .btn-cancel {
   background-color: #594275;
   color: #fff;

@@ -4,13 +4,14 @@
 
 <!-- index.html content starts here -->
 <div class="container-fluid">
-    <div class="row justify-content-center"> <!-- Center the row horizontally -->
-        <div class="col-lg-5 col-md-8 mt-2">
+    <div class="row justify-content-center my-4"> <!-- Center the row horizontally -->
+        <div class="col-lg-6 col-md-8 mt-2">
             <div class="row">
                 {% for topic in topic_list %}
-                <div class="col-md-6"> <!-- Use col-md-6 for two columns -->
+                <div class="col-md-6"> <!-- two columns -->
                     <div class="card mb-2 h-100 d-flex justify-content-center align-items-center">
                         <div class="card-body card-topic-title">
+                            <a href="{% url 'topic_detail' topic.slug %}" class="topic-link">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top" src="{% static 'images/default.jpg' %}"
@@ -19,9 +20,8 @@
                                 <img class="card-img-top" src=" {{ topic.featured_image.url }}" alt="{{ topic.title }}">
                                 {% endif %}
                             </div>
-                            <a href="{% url 'topic_detail' topic.slug %}" class="topic-link">
                                 <h2 class="card-title">{{ topic.title }}</h2>
-                                <article class="card-text">{{ topic.description }}</article>
+                                <h3 class="card-text">{{ topic.description }}</h3>
                             </a>
                         </div>
                     </div>
