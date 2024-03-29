@@ -15,7 +15,7 @@ class TestHomepageViews(TestCase):
             email="test@test.com"
         )
         current_datetime = timezone.now()  # Define current datetime
-        self.topic = Topic(
+        self.topic = Topic.objects.create(
             title="Media",
             slug="media",
             description="",
@@ -23,6 +23,11 @@ class TestHomepageViews(TestCase):
             status=1,
             created_on=current_datetime,
         )
+        
+    # Check if the topic exists
+    def test_topic_created(self):
+        topics = Topic.objects.filter(slug="media")
+        self.assertEqual(len(topics), 1)
 
     def test_render_topic_detail_page(self):
         response = self.client.get(reverse("topic_detail", args=["media"]))
