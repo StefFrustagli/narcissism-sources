@@ -3,21 +3,28 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
+<!-- About content -->
 <div class="container mt-5">
     <div class="row justify-content-center">
-        <div class="col-md-6 custom-background text-white text-left card rounded-100 my-3 p-4">
+        <section class="col-md-6 custom-background text-white text-left card rounded-100 my-3 p-4">
+            <!-- Header with content -->
+            <header>
                 <h2>{{ about_page.title }}</h2>
-            {{ about_page.content | safe }}
-        </div>
+            </header>
+            <section>
+                {{ about_page.content | safe }}
+            </section>
+        </section>
         <div class="col-md-6 border border-4 mb-4 mx-4 card rounded-100">
-            <div class="card my-4">
-                <div class="text-center mb-4"> <!-- Add margin bottom -->
-                    <h2>Get in touch <span class="form-custom-word"></span></h2>
+            <!-- Form section -->
+            <section class="card my-4">
+                <!-- Feedback form message -->
+                <header class="text-center mb-4">
+                    <h2>Get in touch</h2>
                     <p>Feel free to leave <span class="form-custom-word">feedback</span> or a <span
                             class="form-custom-word">collaboration request</span>.
                         I have big plans and I'll be happy to hear from you!</p>
-                </div>
-                <!-- Form -->
+                </header>
                 <div class="text-center">
                     <form method="post">
                         {{ collaborate_form | crispy }}
@@ -25,7 +32,7 @@
                         <button class="btn btn-form" type="submit">Submit</button>
                     </form>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
 </div>

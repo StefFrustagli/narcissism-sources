@@ -1,23 +1,29 @@
 {% block content %}
 <div class="reel-container">
-    <!-- Reel Embed Code -->
     {% if content.source == 'instagram' %}
-    <!-- Use Instagram embed template. Inject the identifier using {{ content.source_identifier }} -->
-    <div class="title-resource">{{ content.title | safe }}</div>
-    {{ content.embed_code | safe }}
-    <!-- Instagram embed script -->
-    <script async src="//www.instagram.com/embed.js"></script>
-
+    <!-- Instagram Embed code -->
+    <section>
+        <div class="title-resource">{{ content.title | safe }}</div>
+        <div class="embed-instagram">
+            {{ content.embed_code | safe }}
+        </div>
+        <!-- Instagram embed script -->
+        <script async src="//www.instagram.com/embed.js"></script>
+    </section>
     {% elif content.source == 'youtube' %}
-    <!-- Use Youtube embed template -->
-    <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/{{ content.source_identifier }}?si=7eRCL1TMBDgE7yQB"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-    </iframe>
+    <!-- Youtube embed template -->
+    <section>
+        <div class="title-resource">{{ content.title | safe }}</div>
+        <!-- Bootstrap class maintains a 16:9 aspect ratio and ensures responsiveness for the YouTube video -->
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/{{ content.source_identifier }}?si=7eRCL1TMBDgE7yQB"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
     {% endif %}
 </div>
-
-
 {% endblock content %}

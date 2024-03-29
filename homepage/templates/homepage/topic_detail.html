@@ -3,7 +3,7 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
-<div class="masthead">
+<header class="masthead">
     <div class="container-fluid">
         <div class="row g-0">
             <div class="col-md-12 masthead-text text-center">
@@ -14,9 +14,10 @@
             </div>
         </div>
     </div>
-</div>
+</header>
 
-<div class="container">
+<!-- Content of the Topic page -->
+<section class="container">
     <div class="row">
         <div class="col card mb-4  mt-3 left top">
             <div class="card-body">
@@ -42,8 +43,10 @@
         </ul>
     </nav>
     {% endif %}
+
+
     <!-- Displaying count of comments -->
-    <div class="row">
+    <section class="row">
         <div class="col-12">
             <strong class="text-secondary">
                 <i class="far fa-comments"></i> {{ comment_count }}
@@ -52,13 +55,13 @@
         <div class="col-12">
             <hr>
         </div>
-    </div>
+    </section>
     <!-- Displaying Comments -->
-    <div class="row">
+    <section class="row">
         <div class="col-md-8 card mb-4  mt-3 ">
             <h3>| Comments section |</h3>
-            <div class="card-body">
-                <!-- We want a for loop inside the empty control tags
+            <section class="card-body">
+                <!-- Loop inside the empty control tags
                   to iterate through each comment in comments -->
                 {% for comment in comments %}
                 {% if user.is_authenticated %}
@@ -85,12 +88,12 @@
                     {% endif %}
                 </div>
                 {% endif %}
-                <!-- Our for loop ends here -->
+                <!-- For loop ends here -->
                 {% endfor %}
-            </div>
+            </section>
         </div>
         <!-- Creating New Comments -->
-        <div class="col-md-4 card mb-4 mt-3">
+        <section class="col-md-4 card mb-4 mt-3">
             <div class="card-body">
                 {% if user.is_authenticated %}
                 <h3>Leave a comment:</h3>
@@ -103,13 +106,10 @@
                 {% else %}
                 <p><a href="{% url 'account_login' %}">Login</a> to access the comments section</p>
                 {% endif %}
-
             </div>
-        </div>
-    </div>
-</div>
-
-
+        </section>
+    </section>
+</section>
 
 <!-- Delete confirmation modal -->
 <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
@@ -120,8 +120,10 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                Are you sure you want to delete your comment?
-                This action cannot be undone.
+                <section>
+                    Are you sure you want to delete your comment?
+                    This action cannot be undone.
+                </section>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -130,7 +132,6 @@
             </div>
         </div>
     </div>
-    <!-- Rest of your code for comments section -->
 </div>
 {% endblock content %}
 

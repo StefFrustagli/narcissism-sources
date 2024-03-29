@@ -27,6 +27,10 @@ body {
   background-color: #fff;
 }
 
+h1.hidden-heading {
+  display:none;
+}
+
 /* Footer */
 .dark-bg {
   background-color: #594275;
