@@ -16,21 +16,21 @@ class TestHomepageViews(TestCase):
         )
         current_datetime = timezone.now()  # Define current datetime
         self.topic = Topic.objects.create(
-            title="Media",
-            slug="media",
+            title="Other media",
+            slug="other-media",
             description="",
             custom_order=2,
             status=1,
             created_on=current_datetime,
         )
-        
+
     # Check if the topic exists
     def test_topic_created(self):
-        topics = Topic.objects.filter(slug="media")
+        topics = Topic.objects.filter(slug="other-media")
         self.assertEqual(len(topics), 1)
 
     def test_render_topic_detail_page(self):
-        response = self.client.get(reverse("topic_detail", args=["media"]))
+        response = self.client.get(reverse("topic_detail", args=["other-media"]))
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b"Media", response.content)
+        self.assertIn(b"Other media", response.content)
         self.assertIsInstance(response.context["comment_form"], CommentForm)

@@ -10,7 +10,7 @@ My goal is to raise awareness about these patterns, empowering individuals to re
 #### Why Narcissism awareness?
 
 This is a very personal project. I wanted to share all the material I found helpful during the years as a 'survivor'.
-I strongly believe in the importance of education: narcissistic abuse, or violent behaviours in general, can be insidious and difficult to identify, so it's crucial to have prevention and recovery plans. Through this project, I hope to facilitate discussions and provide valuable insights into narcissistic behaviors, helping individuals understand and navigate their experiences more effectively. 
+I strongly believe in the importance of education: narcissistic abuse, or violent behaviours in general, can be insidious and difficult to identify, so it's crucial to have prevention and recovery plans. Through this project, I hope to facilitate discussions and provide valuable insights into narcissistic behaviors, helping individuals understand and navigate their experiences more effectively.
 
 View the live project [here](https://narcissism-website-8191a44972de.herokuapp.com/).
 
@@ -36,7 +36,7 @@ Responsive Mockup: ![Responsive Mockup]() AGGIUNGI MOCKUP
 - [Deployment](#deployment)
 - [Credits](#credits)
 
-## Project background 
+## Project background
 
 ### Agile Development
 
@@ -46,11 +46,12 @@ The development process for this project followed Agile methodology, emphasizing
 
 **User Stories**: User stories were categorized into EPICs A, B, C, D, E, and F based on user types and content specificity. I prioritized these user stories using the MoSCoW method, which categorizes requirements into Must have, Should have, Could have, and Won't have categories based on their importance and urgency.
 
-**Continuous Improvement**: Despite working solo on this project, I actively sought ways to enhance development processes and product quality. Regular retrospectives allowed me to reflect on past work, pinpoint areas for improvement, and brainstorm solutions. 
+**Continuous Improvement**: Despite working solo on this project, I actively sought ways to enhance development processes and product quality. Regular retrospectives allowed me to reflect on past work, pinpoint areas for improvement, and brainstorm solutions.
 
 [Link to the GitHub Project board](https://github.com/users/StefFrustagli/projects/2/views/1)
 
 ### Problem Statement
+
 In the past few years, I have liked a large number of reels and videos about narcissism on Instagram and YouTube. These videos played a crucial role in my awareness journey - I believe they were pivotal to my recovery. But this material was somehow 'hidden' or lost in a sea of information on social apps, and I felt it was chaotic. I wanted to make this helpful material organised in one place and easily accessible to those who could benefit from it. It might have helped someone else as well.
 
 **Proposed solution**: What can I do to accomplish that? My answer was this website. The primary intent was to create a site, easy to navigate and interactive, containing all the material (or at least some of it) that could be as helpful to others as much as it was tor me.
@@ -200,35 +201,94 @@ Draft flowchart for apps organisation:
 ## Features and functionalities
 
 ### Current Features
+As previously mentioned, this is an ongoing project that I aim to develop further once I complete my Code Institute diploma.
+Currently, the website is structured and functions as follows:
 
-DA FINIRE
+#### Navbar
+The navbar on every page contains the website name, navigation links, and auxiliary text.
+On smaller screens, navigation links and auxiliary text are displayed by clicking the hamburger icon. On larger screens they appear on the same line as the website name.
 
-- **Homepage**
+Website name:
 
-- **About page**
+IMG
 
-- **Footer**
+The navigation links are: 
+- **Home**
+- **About**
+- **Register** (for non-logged-in users)
+- **Login** (for non-logged-in users)
+- **Logout** (for authorised users)
 
-- **Navbar**
+Navbar for non-logged-in users:
 
-- **Comment section & comment functionalities**
-  ADD, EDIT, DELETE COMMENT below the topic page
+IMG
 
-- **Topic page with content**
+Navbar for authorised users:
 
-- **Register**
+IMG
 
-- **Sign in**
+#### Authentication and notification messages
+Users can see their log status below the navigation bar. The following message will appear to the right if they are logged in:
 
-- **Logout**
+"You are logged in as [username]" 
 
-- **Feedback form**
+Otherwise, a message stating they are not logged in and a link to facilitate logging in:
 
-- **Admin board**
+"You are not logged in.
+Log *here*."
 
-- **Favicon**
+Also displayed below the navigation bar are other notifications such as sign out, edits and deletions of comments.
 
-- **Error pages**
+Example:
+![Sign out confirmation message](https://i.ibb.co/FHh8NZj/Sign-out-notification.png)
+
+#### Footer
+On every page, the footer displays copyright information.
+![Footer with copyright information](https://i.ibb.co/pWSrrjN/my-screenshots-2024-03-29-at-17-01-21.png)
+
+#### Homepage
+There are currently six categories/topics displayed on the homepage, each with a brief description. 
+Topic titles are listed below a square. By clicking the topic title or square, users can access the relevant page. Whenever the square is hovered over and clicked, it simulates a button being pushed. This is a temporary effect, as I plan to add illustrations.
+
+#### Topic page and content
+The number of items on a page is kept to a minimum in order not to overburden the loading time and disorient the user.
+"Prev" and "Next" buttons allow users to navigate between pages.
+
+!['Prev' and 'Next' buttons](https://i.ibb.co/4tHWmw8/my-screenshots-2024-03-29-at-19-41-17.png)
+
+A title at the top of the content provides users with a quick way to identify the topic. Example:
+
+![Example of content in a topic](https://i.ibb.co/1sQvYWf/Example-of-content.png)
+
+The content area will be implemented in the future, since I plan to include a small description below the content.
+
+#### Comments section
+A section at the bottom of the topic page allows authenticated users to leave and view comments. Authenticated users have CRUD capabilities, so they can create, read, update and delete comments.
+
+The comment count is located above the comments section and is visible to everyone (see image below). Users who are not authenticated cannot access this section and see a link to log in instead:
+
+![Message for not authenticated users](https://i.ibb.co/WFCtK5J/my-screenshots-2024-03-29-at-19-40-59.png)
+
+
+
+
+#### About page
+
+#### Feedback form
+
+#### Register page
+
+#### Sign in page
+
+#### Logout page
+
+
+
+#### Admin board
+
+#### Favicon
+
+#### Error pages
 
 ### Future Features and general aspects left to implement
 
@@ -239,13 +299,13 @@ I have a big project in mind, and this is just the first version. The following 
   Additionally, I would like to improve the navigation with tags and organize the content more attractively.
 
 - **User account**:
-  One of the plans is to expand the functionalities available to users, aiming to streamline their experience. This would involve creating a dedicated user account page where users can manage their account settings and comments conveniently. Additionally, they will have options to delete their account and reset their password for added control over their personal information. 
+  One of the plans is to expand the functionalities available to users, aiming to streamline their experience. This would involve creating a dedicated user account page where users can manage their account settings and comments conveniently. Additionally, they will have options to delete their account and reset their password for added control over their personal information.
 
 - **Community page & comment app (or 'why did you create a Comments app?')**:
   I've included a comments app because I was laying the groundwork for a future community page. Even though its relevance may not be immediately apparent at the current state of the website, this is important in the future direction of the platform. Sharing is a crucial aspect of the healing process, and having a platform for users to interact will be integral to the site's purpose. The comments app will serve as an essential feature to manage user interactions and foster community engagement. This decision was made to establish a foundation for future features and enhance the overall user experience.
 
 - **Collaborations & courses**:
-  My primary objective is to better the site's visibility by focusing on aesthetic improvements. Once these enhancements are in place, I intend to promote the site on relevant channels and platforms where discussions related to the subject take place. My plan is to contact professionals to collaborate on content and offer courses tailored to users' interests and needs. 
+  My primary objective is to better the site's visibility by focusing on aesthetic improvements. Once these enhancements are in place, I intend to promote the site on relevant channels and platforms where discussions related to the subject take place. My plan is to contact professionals to collaborate on content and offer courses tailored to users' interests and needs.
 
 - **Error pages** are present in the website but the design is left to implement.
 
@@ -285,7 +345,7 @@ I have a big project in mind, and this is just the first version. The following 
 - [Table Convert](https://tableconvert.com/) was used to generate tables for the TESTING.md file.
 - [ChatGPT](https://chat.openai.com/) was used as helpful tool during the debugging process.
 
-## Modules imported 
+## Modules imported
 
 - **django.contrib**: Django modules for various functionalities like admin.
 - **django.urls**: Django module for URL routing.
