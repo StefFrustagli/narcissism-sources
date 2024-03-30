@@ -29,8 +29,8 @@ Responsive Mockup: ![Responsive Mockup]() AGGIUNGI MOCKUP
   - [Ideal Users](#ideal-users)
   - [User Stories](#user-stories-site-accessibility--functionality)
 - [Features and functionalities](#features-and-functionalities)
-  - [Current Feature](#current-features)
-  - [Future Feature](#future-features-and-general-aspects-left-to-implement)
+  - [Current Features](#current-features)
+  - [Future Features](#future-features-and-general-aspects-left-to-implement)
 - [Technologies used](#technologies-used)
 - [Testing](#testing)
 - [Deployment](#deployment)
@@ -72,7 +72,7 @@ DA AGGIUNGERE
 
 ![Colour Palette](https://i.ibb.co/Rg9f3bt/my-screenshots-2024-03-18-at-07-53-23.png)
 
-#### Other variations
+#### Variations:
 
 ![Colour square #7e3594](https://i.ibb.co/rtyKWVp/my-screenshots-2024-03-20-at-10-48-09.png) ![Colour square #ffffff](https://i.ibb.co/HxX3pSW/my-screenshots-2024-03-20-at-10-50-23.png) ![Colour square #594275](https://i.ibb.co/cD9SjV2/my-screenshots-2024-03-19-at-12-48-21.png)
 
@@ -208,36 +208,34 @@ Currently, the website is structured and functions as follows:
 The navbar on every page contains the website name, navigation links, and auxiliary text.
 On smaller screens, navigation links and auxiliary text are displayed by clicking the hamburger icon. On larger screens they appear on the same line as the website name.
 
-Website name:
-
-IMG
+![Website name](https://i.ibb.co/JdDbNpY/my-screenshots-2024-03-29-at-19-39-01.png)
 
 The navigation links are: 
-- **Home**
-- **About**
-- **Register** (for non-logged-in users)
-- **Login** (for non-logged-in users)
-- **Logout** (for authorised users)
+- Home
+- About
+- Register (for non-logged-in users)
+- Login (for non-logged-in users)
+- Logout (for authorised users)
 
-Navbar for non-logged-in users:
+Navigation links for non-logged-in users:
 
-IMG
+![Navigation links for non-logged-in users](https://i.ibb.co/xsyNNKJ/my-screenshots-2024-03-29-at-19-39-52.png)
 
-Navbar for authorised users:
+Navigation links for authorised users:
 
-IMG
+![Navigation links for logged-in users](https://i.ibb.co/51XG6wM/my-screenshots-2024-03-29-at-19-39-09.png)
 
 #### Authentication and notification messages
-Users can see their log status below the navigation bar. The following message will appear to the right if they are logged in:
+Users can see their log status below the navigation bar. The following message will appear to the right of the acreen if users are logged in:
 
 "You are logged in as [username]" 
 
-Otherwise, a message stating they are not logged in and a link to facilitate logging in:
+Otherwise, a message stating they are not logged in will apprear, with a link:
 
 "You are not logged in.
 Log *here*."
 
-Also displayed below the navigation bar are other notifications such as sign out, edits and deletions of comments.
+Below the navigation bar will also appear other notifications, such as sign out, edits and deletions of comments.
 
 Example:
 ![Sign out confirmation message](https://i.ibb.co/FHh8NZj/Sign-out-notification.png)
@@ -265,30 +263,87 @@ The content area will be implemented in the future, since I plan to include a sm
 #### Comments section
 A section at the bottom of the topic page allows authenticated users to leave and view comments. Authenticated users have CRUD capabilities, so they can create, read, update and delete comments.
 
-The comment count is located above the comments section and is visible to everyone (see image below). Users who are not authenticated cannot access this section and see a link to log in instead:
+The comment will need to be authorised by an Admin user to be visible on the website:
+![Form to leave a comment](https://i.ibb.co/gj9S3zR/my-screenshots-2024-03-29-at-20-59-53.png)
+
+Form to leave a comment:
+![Form to leave a comment](https://i.ibb.co/vmsjCqj/my-screenshots-2024-03-29-at-20-51-20.png)
+
+Once submitted, the user will be able to edit or delete it thorugh the buttons below the comment.
+
+If the user needs to edit the comment, the text will reappear in the body field with an 'update' button:
+![Form to update comment](https://i.ibb.co/Fqzv0Y2/my-screenshots-2024-03-29-at-21-00-10.png)
+
+In case of deletion, the user will be asked to confirm their choice. They will also have the option to cancel the action by clicking on "Close":
+
+![Delete comment confirmation](https://i.ibb.co/sHx3dw8/my-screenshots-2024-03-29-at-20-59-44.png)
+
+Users will see a notification when their comments are submitted and awaiting approval: 
+![Notification "Comment updated"](https://i.ibb.co/DWdDjfs/my-screenshots-2024-03-29-at-21-01-59.png)
+
+The same applies when users delete a comment:
+
+![Notification "Comment deleted"](https://i.ibb.co/xjSFKmS/my-screenshots-2024-03-29-at-21-08-04.png)
+
+
+A comment count, located above the comments section, is visible to everyone (see image below). **Users who are not authenticated cannot access this section**. Instead, they will see a link to log in:
 
 ![Message for not authenticated users](https://i.ibb.co/WFCtK5J/my-screenshots-2024-03-29-at-19-40-59.png)
 
+#### Register page
+The Register page, which is visible to non-logged-in users, presents a registration form. The mandatory fields are 'Username' and 'Password' (to be entered twice), while the optional field is 'Email' address.
 
+![Register page](https://i.ibb.co/6X7qPDX/my-screenshots-2024-03-30-at-11-21-11.png)
+In addition, it contains a link that leads to the Login page, if the user has already created an account.
+
+#### Sign in page
+The Sign in page allows registered users to sign into their account by entering their username and password. It also contains a link to the Register page, if the user hasn't created an account yet.
+![Sign-in form](https://i.ibb.co/2htJsWd/my-screenshots-2024-03-30-at-11-21-19.png)
+
+Also, users have the option of having their login information remembered, so they don't have to re-enter their login information each time they visit the website.
+
+#### Logout page
+The logout page allows users to log out of their accounts. The user must confirm their choice. The user can also cancel the action and return to the homepage.
+
+![Log out form](https://i.ibb.co/wrqnYDk/my-screenshots-2024-03-30-at-10-57-15.png)
 
 
 #### About page
+This page outlines the purpose of the website and my role as a creator. The purpose of my short presentation is to establish trust with the viewer and to explain the current state of the website in a clear and concise manner.
 
-#### Feedback form
+Below the About section there is a collaboration/feedback form that I invite the viewer to use.
 
-#### Register page
+#### Collaboration form
+![Collaboration/feedback form](https://i.ibb.co/9sQGFQb/my-screenshots-2024-03-30-at-09-48-35.png)
 
-#### Sign in page
+The form on the About page is accessible to everyone. If casual viewers did not want to register, I wanted them to be able to send me messages directly. 
+A brief text invites the user to contact me.
+The fields required are 'Name', 'Email' and 'Message'.
 
-#### Logout page
+Once submitted, the collaboration request will be visible to admin users on the Django admin board.
 
+![Collaboration forms visible in the Admin board](https://i.ibb.co/tK6yZNV/my-screenshots-2024-03-29-at-23-19-59.png)
 
+From there, it will then be possible for admin users to acknowledge the message as read or simply delete it.
 
-#### Admin board
+![Delete option in the Django admin board](https://i.ibb.co/kMqyRBk/my-screenshots-2024-03-29-at-23-20-25.png)
+
+#### Django admin board
+The admin board allows administrators to control the website. They can add topics and contents, edit the About section and authorise comments to be published.
+
+![Django Administrator Board](https://i.ibb.co/NW7VpRC/my-screenshots-2024-03-30-at-10-50-46.png)
+
+In the admin board, it is also possible to control users' permissions, deactivate their accounts or make them admin users.
+
+The functionalities are still basic and will be improved in the future.
 
 #### Favicon
+This website's favicon is a purple square with the first capital letters of the website's subject: NPD.
+
+![Favicon: NPD in a purple square](https://i.ibb.co/Ykpf4gs/my-screenshots-2024-03-29-at-23-01-13.png)
 
 #### Error pages
+The error pages simply provide the user with a link back to the homepage and inform them what type of error they encountered.
 
 ### Future Features and general aspects left to implement
 
@@ -392,7 +447,7 @@ Heroku was used to deploy the site. Here are the steps to deploy:
 10. First, add "python" and click save.
 11. Second, add "nodejs" and click save.
 
-The live site can be found here: [Narcissistic Website]() AGGIUNGI LINK
+The live site can be found here: [Narcissistic Website](https://narcissism-website-8191a44972de.herokuapp.com/) 
 
 ### Cloning:
 
@@ -411,7 +466,46 @@ You can fork this project and make a copy of the original repository in your own
 
 It should be noted that all changes pushed to the main branch are automatically reflected on the site.
 
-## Database COME CREARLO DA AGGIUNGERE
+## Database creation
+The database used is PostgreSQL.
+
+### How to get started:
+1. Go to https://dbs.ci-dbs.net/
+2. Input email address and click Submit;
+3. The Database will be created and the details emailed;
+4. You will need the DATABASE_URL to connect the database to your project.
+
+### How to connect the database to the project:
+1. Create a file named **env.py** at the top level of the project;
+2. Open the **.gitignore** file and add **env.py** to prevent the secret data you will add to it from being pushed to GitHub.
+3. In the **env.py** file, import Python's operating system module and use it to set the value of the **DATABASE_URL** constant to the URL copied from the details emailed to you - see below:
+```
+import os
+
+os.environ.setdefault(
+    "DATABASE_URL", "<your-database-URL>")
+```
+4. Pip install the two packages required to connect to your PostgreSQL database. Then add them to the requirements file:
+```
+pip3 install dj-database-url~=0.5 psycopg2~=2.9
+pip3 freeze --local > requirements.txt
+```
+5. In **settings.py** import the appropriate packages and connect the **settings.py** file to the **env.py** file:
+```
+import os
+import dj_database_url
+if os.path.isfile('env.py'):
+    import env
+```
+6. In the **settings.py** file, comment out the local sqlite3 database connection set up by default.
+
+7. In the **settings.py** file, connect to the environment variable **DATABASE_URL** you previously added to the **env.py** file:
+```
+DATABASES = {
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+}
+```
+8. Your project is now connected to the database and you can create database tables with Django's **migrate** command.
 
 ## Credits
 
@@ -421,8 +515,8 @@ DA AGGIUNGERE
 
 ### Code
 
-The code was mainly based on Code Institute's walkthrough of the Django project. This is my first time using technologies such as Django and Bootstrap, so it has been challenging, but my goal is to make the code better going forward.
+The code was mainly based on Code Institute's walkthrough in the Django module. This is my first time using technologies such as Django and Bootstrap, so it has been challenging, but my goal is to keep working on this project going forward and improve the code.
 
 ### Acknowledgment
 
-I am very grateful to my mentor Brian Macharia for his suggestions, and to my classmate Niclas for his precious support and help. Also, a special thanks goes to the amazing tool that is ChatGPT: it helped me with the debugging process and whenever I got stuck.
+I am grateful to my mentor Brian Macharia for his suggestions and to my classmate Niclas for his precious support. A special thanks goes to the amazing tool that is ChatGPT: it helped me with the debugging process and whenever I got stuck.
