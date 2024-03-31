@@ -27,20 +27,22 @@ Due to the use of Instagram reels and the development of a full-stack website, I
     Current results:
     ![Homepage Lighthouse - current testing results](https://i.ibb.co/Wcm3Qfg/current-homepage.png)
 
-    The following changes or attempts were made:
-    - I added 'lazy loading' to images in index.html;
-    - I made sure images had a webP extension;
-    - I added Meta tags;
-    - I updated the site.webmanifest file in the favicon folder, adding information about "name" and "short-name";
-    - I have tried to fix an issue with HTTPS 
-        ![Lighthouse testing - Issue with HTTPS](https://i.ibb.co/ZMPKY64/my-screenshots-2024-03-31-at-16-43-37.png)
-        adding this:
+    Changes made:
+- **Lazy Loading**: Implemented lazy loading feature for images in index.html, optimizing page loading times.
+- **WebP Image Format**: Converted images to the WebP format to improve image compression and load times.
+- **Meta Tags**: Added essential meta tags to enhance search engine visibility and improve sharing on social media platforms.
+- **Image Quality Enhancement**: Improved the quality of images.
+- **Site Manifest Update**: Updated the site.webmanifest file located in the favicon folder, providing comprehensive information about the website's name and short name.
+- **HTTPS Issue** (see image below): Investigated and attempted to fix an issue related to HTTPS to ensure secure communication between the website and users' browsers. 
+    ![Lighthouse testing - Issue with HTTPS](https://i.ibb.co/ZMPKY64/my-screenshots-2024-03-31-at-16-43-37.png)
+        
+    Attempts made:
 
             ```
             <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
             ```
 
-        or this one:
+    and:
 
             ```
             cloudinary.config(
@@ -48,30 +50,40 @@ Due to the use of Instagram reels and the development of a full-stack website, I
             )
             ```
     
-       Unfortunately, none of the options worked.
+    Unfortunately, none of the options worked.
 
 - **Topic pages**:    
-    Initial results: 
-    ![Topic page Lighthouse testing - initial results]()
-
-    Current results:
-    ![Topic page Lighthouse Testing - current results]()
+    Current results: 
+    ![Topic page Lighthouse testing - current results](https://i.ibb.co/xq31STL/Topic-page-lighthouse-testing.png)
 
     Changes made: 
-    I have reduced the number of reels displayed per page. In an attempt to increase the performance score, I've reduced them from four to three and then to two. This is not ideal, as I want the user to decide what content to prioritize. However, I have decided to adopt this as a temporary solution until I find a better one.
+
+   The number of reels displayed per page was reduced. In an attempt to increase the performance score, I've reduced them from four to three and then to two. This is not ideal, as I want the user to decide what content to prioritize. However, I have decided to adopt this as a temporary solution until I find a better one.
     A possible solution I'm considering is to create drop-down windows for each social media post, displaying the title, the description and hiding the video. This implementation will require some planning and time, so it won't be done at the current stage.
 
 - **About page**:
 
     Current results:
+
     ![About page Lighthouse testing - current results](https://i.ibb.co/RY7y6Jp/my-screenshots-2024-03-31-at-18-17-35.png)
 
 - **Register page**:
 
+    Current results:
+
+    ![Register page Lighthouse Testing - current results](https://i.ibb.co/7NWgCxM/Register-page.png) 
+
 - **Login page**:
+
+    Current results:
+
+    ![Login page Lighthouse Testing - current results](https://i.ibb.co/L5rvN2Y/Sign-In-page.png)
 
 - **Logout page**:
 
+    Current results:
+
+    ![Logout page Lighthouse Testing - current results](https://i.ibb.co/2KGVJPk/Logout-page.png)
 
 
 ## Manual testing
@@ -141,12 +153,15 @@ Due to the use of Instagram reels and the development of a full-stack website, I
 
 
 ## Automated testing
-Key functionalities tested:
-
+The functionalities tested were:
 - Comments and collaboration forms;
 - POST data and return of the correct response;
 - Access to the topic page and the About page.
 
+## Responsiveness 
+The website's responsiveness has been tested using Google Chrome Developer Tools. To ensure compatibility across different devices, various screen resolutions were simulated. A custom media query was implemented to address an issue with the iPad Pro display.
+
+The website now displays responsively across a wide range of devices and screen sizes.
 
 ## Bugs resolved
 - **Instagram content embed issue**
@@ -169,4 +184,4 @@ The asynchronous script tag loads the Instagram embed JavaScript file from the I
 
 ## Remaining bugs
 
-There are no major issues that impact the website's functionalities; however, given the components involved, there are several aspects I need to address to improve overall performance.
+There are no major issues that impact the website's functionalities. However, given the components involved, there are several aspects I need to address to improve the overall performance.
