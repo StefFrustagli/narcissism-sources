@@ -15,6 +15,64 @@
 [CI Python Linter](https://pep8ci.herokuapp.com/#) was used to validate the Python code. All the errors highlighted were fixed. 
 
 ### Lighthouse Testing
+I performed Lighthouse tests using Chrome Dev tools in an incognito window.
+
+Due to the use of Instagram reels and the development of a full-stack website, I expected several critical aspects to be addressed. Regarding the content used, I was mainly concerned about the site's performance and 'heaviness'.
+
+- **Homepage**:
+
+    Initial results: 
+    ![Homepage Lighthouse testing - initial results](https://i.ibb.co/6P9qR6r/my-screenshots-2024-03-31-at-18-18-50.png)
+
+    Current results:
+    ![Homepage Lighthouse - current testing results](https://i.ibb.co/Wcm3Qfg/current-homepage.png)
+
+    The following changes or attempts were made:
+    - I added 'lazy loading' to images in index.html;
+    - I made sure images had a webP extension;
+    - I added Meta tags;
+    - I updated the site.webmanifest file in the favicon folder, adding information about "name" and "short-name";
+    - I have tried to fix an issue with HTTPS 
+        ![Lighthouse testing - Issue with HTTPS](https://i.ibb.co/ZMPKY64/my-screenshots-2024-03-31-at-16-43-37.png)
+        adding this:
+
+            ```
+            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+            ```
+
+        or this one:
+
+            ```
+            cloudinary.config(
+            secure=True
+            )
+            ```
+    
+       Unfortunately, none of the options worked.
+
+- **Topic pages**:    
+    Initial results: 
+    ![Topic page Lighthouse testing - initial results]()
+
+    Current results:
+    ![Topic page Lighthouse Testing - current results]()
+
+    Changes made: 
+    I have reduced the number of reels displayed per page. In an attempt to increase the performance score, I've reduced them from four to three and then to two. This is not ideal, as I want the user to decide what content to prioritize. However, I have decided to adopt this as a temporary solution until I find a better one.
+    A possible solution I'm considering is to create drop-down windows for each social media post, displaying the title, the description and hiding the video. This implementation will require some planning and time, so it won't be done at the current stage.
+
+- **About page**:
+
+    Current results:
+    ![About page Lighthouse testing - current results](https://i.ibb.co/RY7y6Jp/my-screenshots-2024-03-31-at-18-17-35.png)
+
+- **Register page**:
+
+- **Login page**:
+
+- **Logout page**:
+
+
 
 ## Manual testing
 | **TO BE TESTED**                    | TEST ACTION                                                                                                                          | EXPECTED OUTCOME                                                                                                                                                            | Expected outcome in details                                                                                                                                                                                                          | TEST OUTCOME                                                                                       | FURTHER ACTIONS                             |
@@ -111,4 +169,4 @@ The asynchronous script tag loads the Instagram embed JavaScript file from the I
 
 ## Remaining bugs
 
-To the best of my knowledge, there are no remaining bugs.
+There are no major issues that impact the website's functionalities; however, given the components involved, there are several aspects I need to address to improve overall performance.
