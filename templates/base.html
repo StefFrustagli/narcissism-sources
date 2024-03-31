@@ -10,9 +10,19 @@
 <html class="h-100" lang="en">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Meta tag to allow different devices to scale the content-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta tags for search engines -->
+    <meta name="description"
+        content="Discover comprehensive social media resources on Narcissistic Personality Disorder, including expert insights, support communities, and practical tips. Explore now and empower yourself." />
+    <meta name="keywords"
+        content="Narcissistic Personality Disorder, NPD, NPD resources, Personality disorders, Mental health support, Coping strategies, Therapy options, Online communities, Support groups, Understanding NPD, Self-help techniques, Psychological resources, Emotional resilience, Managing relationships, Self-care practices, Empowerment tools, Recovery journey, Awareness journey, Mental wellness tips, Peer support, Instagram reels, Reels, Abuse, Violence, Abusive behaviours, Violent behaviours" />
+
     <!-- Title -->
     <title>Narcissism Personality Disorder: Social Resources</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
@@ -34,6 +44,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <!-- Theme Color for Address Bar -->
+    <meta name="theme-color" content="#7f5ea3">
 
 </head>
 
@@ -121,29 +134,31 @@
     </div>
 
     <main class="flex-shrink-0 main-bg">
-        
-            {% if user.is_authenticated %}
-            <p class="text-end m-3">You are logged in as {{ user }} </p>
 
-            {% else %}
-            <p class="text-end m-3">You are not logged in. </br>Log <a class="purple-part" href="{% url 'account_login' %}">here</a>.</p>
-            {% endif %}
-      
-       
-            <h1 class="hidden-heading">Narcissist Personality Disorder Social resources content</h1>
-            {% block content %}
-            <!-- Content Goes here -->
-            {% endblock content %}
-        
+        {% if user.is_authenticated %}
+        <p class="text-end m-3">You are logged in as {{ user }} </p>
+
+        {% else %}
+        <p class="text-end m-3">You are not logged in. </br>Log <a class="purple-part"
+                href="{% url 'account_login' %}">here</a>.</p>
+        {% endif %}
+
+
+        <h1 class="hidden-heading">Narcissist Personality Disorder Social resources content</h1>
+        {% block content %}
+        <!-- Content Goes here -->
+        {% endblock content %}
+
     </main>
 
     <!-- Footer -->
-    
+
     <footer class="footer mt-auto py-3 dark-bg">
-        <p class="m-0 mx-4 text-center text-xs">Narcissistic Personality Disorder | Social Resources © 2024. </br> All rights
+        <p class="m-0 mx-4 text-center text-xs">Narcissistic Personality Disorder | Social Resources © 2024. </br> All
+            rights
             reserved</p>
     </footer>
-   
+
     <!-- JavaScript for Bootstrap functionality -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
