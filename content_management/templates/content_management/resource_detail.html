@@ -3,7 +3,7 @@
     {% if content.source == 'instagram' %}
     <!-- Instagram Embed code -->
     <section>
-        <div class="title-resource">{{ content.title | safe }}</div>
+        <h2 class="title-resource">{{ content.title | safe }}</h2>
         <div class="embed-instagram">
             {{ content.embed_code | safe }}
         </div>
@@ -13,7 +13,7 @@
     {% elif content.source == 'youtube' %}
     <!-- Youtube embed template -->
     <section>
-        <div class="title-resource">{{ content.title | safe }}</div>
+        <h2 class="title-resource">{{ content.title | safe }}</h2>
         <!-- Bootstrap class maintains a 16:9 aspect ratio and ensures responsiveness for the YouTube video -->
         <div class="embed-responsive embed-responsive-16by9">
             <iframe width="560" height="315"
