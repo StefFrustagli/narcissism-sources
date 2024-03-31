@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, redirect 
+from django.shortcuts import render, get_object_or_404, redirect
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
@@ -21,18 +21,30 @@ class TopicList(generic.ListView):
         template_name (str): The name of the template to render.
         paginate_by (int): The number of topics to display per page.
     """
+
     queryset = Topic.objects.all()
     template_name = "homepage/index.html"
     paginate_by = 6
 
 
 class ContentList(generic.ListView):
+    """
+    ListView subclass to display a list of content related to a topic.
+
+    This class extends Django's generic ListView to display a paginated list
+    of content related to a specific topic. It retrieves the topic based on
+    the slug in the URL and filters the content queryset accordingly.
+
+    Attributes:
+        template_name (str): The name of the template used to render the view.
+        paginate_by (int): The number of items to display per page.
+    """
     template_name = "homepage/topic_detail.html"
     paginate_by = 4
 
     def get_queryset(self):
         # Get the topic based on the slug in the URL
-        topic_slug = self.kwargs.get('slug')
+        topic_slug = self.kwargs.get("slug")
         topic = get_object_or_404(Topic, slug=topic_slug)
         # Filter the content queryset based on the topic
         return Content.objects.filter(topic=topic)
@@ -58,7 +70,7 @@ def topic_detail(request, slug):
 
     # Paginate content related to the topic
     content_list = topic.content_set.all()
-    paginator = Paginator(content_list, 4)  
+    paginator = Paginator(content_list, 4)
     page_number = request.GET.get("page")
     try:
         content_page = paginator.page(page_number)
@@ -79,7 +91,8 @@ def topic_detail(request, slug):
             comment.topic = topic
             comment.save()
             messages.add_message(
-                request, messages.SUCCESS, "Comment submitted and awaiting approval"
+                request, messages.SUCCESS,
+                "Comment submitted and awaiting approval"
             )
 
     comment_form = CommentForm()
@@ -92,7 +105,8 @@ def topic_detail(request, slug):
             "comments": comments,
             "comment_count": comment_count,
             "comment_form": comment_form,
-            "content_page": content_page,  # Pass paginated content to the template
+            # Pass paginated content to the template
+            "content_page": content_page,
         },
     )
 
@@ -122,7 +136,8 @@ def comment_edit(request, slug, comment_id):
             comment.save()
             messages.add_message(request, messages.SUCCESS, "Comment Updated!")
         else:
-            messages.add_message(request, messages.ERROR, "Error updating comment!")
+            messages.add_message(request, messages.ERROR,
+                                 "Error updating comment!")
 
     return HttpResponseRedirect(reverse("topic_detail", args=[slug]))
 

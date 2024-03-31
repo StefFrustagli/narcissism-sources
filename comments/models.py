@@ -6,6 +6,8 @@ from django.contrib.auth import get_user_model
 # This model represents comments on topics.
 # It is part of the "comments" app, which will be expanded to include
 # community features in the future.
+
+
 class Comment(models.Model):
     """
     Represents a comment made by a user on a topic.

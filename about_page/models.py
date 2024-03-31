@@ -1,13 +1,14 @@
 from django.db import models
 
-# Create your models here.
+
 class About(models.Model):
     """
     Model representing the About page.
 
     Attributes:
         title (str): The title of the About page.
-        updated_on (DateTime): The date and time when the About page was last updated.
+        updated_on (DateTime): The date and time when
+        the About page was last updated.
         content (str): The content of the About page.
     """
     title = models.CharField(max_length=200)

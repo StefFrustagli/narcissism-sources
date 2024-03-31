@@ -10,13 +10,14 @@ def resource_detail(request, topic_id):
 
     Args:
         request (HttpRequest): The HTTP request object.
-        topic_id (int): The ID of the topic whose resources are to be displayed.
+        topic_id (int): The ID of the topic
+        whose resources are to be displayed.
 
     Returns:
-        HttpResponse: The rendered HTML response displaying 
+        HttpResponse: The rendered HTML response displaying
         the topic's resources.
     """
-    topic = get_object_or_404(Topic, id= topic_id)
+    topic = get_object_or_404(Topic, id=topic_id)
     content_set = Content.objects.filter(topic=topic)
 
     # content_set = Content.objects.filter(content=content)
@@ -24,7 +25,7 @@ def resource_detail(request, topic_id):
     template = 'topic_detail.html'
 
     context = {
-        'topic': topic, # 'resource_detail' renamed to 'topic'
+        'topic': topic,  # 'resource_detail' renamed to 'topic'
         'content_set': content_set
     }
 

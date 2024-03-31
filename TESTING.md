@@ -12,10 +12,9 @@
 ### JavaScript
 
 ### Python 
-DA MODIFICARE
+[CI Python Linter](https://pep8ci.herokuapp.com/#) was used to validate the Python code. All the errors highlighted were fixed. 
 
-[CI Python Linter](https://pep8ci.herokuapp.com/#) was used to validate the Python code. No errors were highlighted. View result [here](https://i.ibb.co/SnwWzTn/my-screenshots-2023-11-17-at-18-11-41.png).
-
+### Lighthouse Testing
 
 ## Manual testing
 | **TO BE TESTED**                    | TEST ACTION                                                                                                                          | EXPECTED OUTCOME                                                                                                                                                            | Expected outcome in details                                                                                                                                                                                                          | TEST OUTCOME                                                                                       | FURTHER ACTIONS                             |
