@@ -28,10 +28,10 @@
                                         {% if "placeholder" in post.featured_image.url %}
                                         <!-- Topic title as alt text for images -->
                                         <img class="card-img-top" src="{% static 'images/default.jpg' %}"
-                                            alt="{{ topic.title }} loading="lazy"">
+                                            alt="{{ topic.title }} loading= "lazy">
                                         {% else %}
                                         <img class="card-img-top" src=" {{ topic.featured_image.url }}"
-                                            alt="{{ topic.title }} loading="lazy"">
+                                            alt="{{ topic.title }} loading= "lazy">
                                         {% endif %}
                                     </div>
                                     <!-- Topic title -->

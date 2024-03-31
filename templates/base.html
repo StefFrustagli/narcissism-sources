@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Content security policy -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
     <!-- Meta tags for search engines -->
     <meta name="description"
@@ -142,7 +142,7 @@
         <p class="text-end m-3">You are logged in as {{ user }} </p>
 
         {% else %}
-        <p class="text-end m-3">You are not logged in. </br>Log <a class="purple-part"
+        <p class="text-end m-3">You are not logged in. <br>Log <a class="purple-part"
                 href="{% url 'account_login' %}">here</a>.</p>
         {% endif %}
 
@@ -157,7 +157,7 @@
     <!-- Footer -->
 
     <footer class="footer mt-auto py-3 dark-bg">
-        <p class="m-0 mx-4 text-center text-xs">Narcissistic Personality Disorder | Social Resources © 2024. </br> All
+        <p class="m-0 mx-4 text-center text-xs">Narcissistic Personality Disorder | Social Resources © 2024. <br> All
             rights
             reserved</p>
     </footer>

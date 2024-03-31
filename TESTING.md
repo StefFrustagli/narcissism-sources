@@ -14,7 +14,7 @@
 ### Python 
 [CI Python Linter](https://pep8ci.herokuapp.com/#) was used to validate the Python code. All the errors highlighted were fixed. 
 
-### Lighthouse Testing
+## Lighthouse Testing
 I performed Lighthouse tests using Chrome Dev tools in an incognito window.
 
 Due to the use of Instagram reels and the development of a full-stack website, I expected several critical aspects to be addressed. Regarding the content used, I was mainly concerned about the site's performance and 'heaviness'.
