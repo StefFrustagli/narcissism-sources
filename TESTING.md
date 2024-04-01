@@ -6,10 +6,17 @@
 ## Validator Testing
 
 ### HTML
-All the HTML files were checked with [W3C Markup Validation Service](https://validator.w3.org/) and  errors identified addressed.
+All the HTML files were checked with [W3C Markup Validation Service](https://validator.w3.org/) and errors identified addressed.
 
-Exclusions:
-Some errors involving Django elements, such as Summernote features, were excluded. These errors were acknowledged but not modified as they are integral to the correct functionality of the website.
+**Exclusions:**
+
+Some errors involving Django elements, such as Summernote features or Bootstrap, were excluded. These errors were acknowledged but not modified as they are integral to the correct functionality of the website.
+
+One of the errors that could not be fixed was the following:
+"Error: Attribute comment_id not allowed on element button at this point."
+
+Explanation:
+When attempting to replace 'comment_id' with an acceptable 'data-comment-id' attribute in HTML and subsequently updating it in JavaScript, the code broke. Despite various attempts, including changing the URLs and views associated with comment functionalities, the issue persisted. Further investigation and resolution are required to address this error effectively.
 
 ### CSS
 

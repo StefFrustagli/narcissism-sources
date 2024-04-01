@@ -19,13 +19,15 @@ Responsive Mockup: ![Responsive Mockup]() AGGIUNGI MOCKUP
 ## Table of Contents DA MODIFICARE
 
 - [Website Overview](#website-overview)
-- [Project background & User Experience](#project-background--user-experience)
+- [Project background](#project-background)
   - [Agile Development](#agile-development)
   - [Problem Statement](#problem-statement)
   - [The Design Process](#the-design-process-thinking-through-it)
   - [Colour Palettes](#colour-palettes)
+  - [Fonts](#fonts)
   - [Wireframes](#wireframes)
   - [Data Model](#data-model)
+- [User Experience](#user-experience)
   - [Ideal Users](#ideal-users)
   - [User Stories](#user-stories-site-accessibility--functionality)
 - [Features and functionalities](#features-and-functionalities)
@@ -532,7 +534,20 @@ DATABASES = {
 
 ### Content
 
-DA AGGIUNGERE
+Currently, all social resources come from Instagram. However, expanding the content sources is on the agenda, with plans to integrate YouTube, and possibly TikTok material, in the near future.
+
+Social accounts embedded include:
+- [understandingthenarc](https://www.instagram.com/understandingthenarc/?utm_source=ig_embed&ig_rid=6fd414fc-fe77-4373-a6d0-5278cfdcfa6a);
+- [narcabusecoach](https://www.instagram.com/narcabusecoach/?utm_source=ig_embed&ig_rid=7ecb39de-6db1-47b5-aac4-74bc2a3fe61b);
+- [doctorramani](https://www.instagram.com/doctorramani/?utm_source=ig_embed&ig_rid=cd5a15e1-5f38-4564-a546-744c04e596f1);
+- [theselflovemethod](https://www.instagram.com/theselflovemethod/?utm_source=ig_embed&ig_rid=685b4e6b-25ae-4d85-b163-f7bdbac059d0);
+- [kerrymcavoyphd](https://www.instagram.com/kerrymcavoyphd/?utm_source=ig_embed&ig_rid=a238dafa-26b2-4d6d-bd53-c1f19cc92563);
+- [selfworkco](https://www.instagram.com/selfworkco/?utm_source=ig_embed&ig_rid=0e22f363-0306-4958-a444-5db65f5cfbe6)
+- [_stronger_than_before_coach](https://www.instagram.com/_stronger_than_before_coach/?utm_source=ig_embed&ig_rid=ba1eddd5-aad8-4c4b-82a5-fad8f0b10efe);
+- [rayfreemanpsychotherapy](https://www.instagram.com/rayfreemanpsychotherapy/?utm_source=ig_embed&ig_rid=9caab940-8a93-4de8-8639-05317de6c66b);
+- [mentalhealnesss](https://www.instagram.com/mentalhealnesss/?utm_source=ig_embed&ig_rid=06b5b323-649a-4f02-9e03-638c8292f283);
+- [rawmotivations](https://www.instagram.com/rawmotivations/?utm_source=ig_embed&ig_rid=e6699201-a23c-439f-bc93-cf360a8770ed)
+
 
 ### Code
 

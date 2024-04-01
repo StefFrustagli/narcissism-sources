@@ -48,7 +48,7 @@
 
 
     <!-- Displaying count of comments -->
-    <section class="row">
+    <div class="row">
         <div class="col-12">
             <strong class="text-secondary">
                 <i class="far fa-comments"></i> {{ comment_count }}
@@ -57,12 +57,13 @@
         <div class="col-12">
             <hr>
         </div>
-    </section>
+    </div>
+
     <!-- Displaying Comments -->
     <section class="row">
         <div class="col-md-8 card mb-4  mt-3 ">
             <h3>| Comments section |</h3>
-            <section class="card-body">
+            <div class="card-body">
                 <!-- Loop inside the empty control tags
                   to iterate through each comment in comments -->
                 {% for comment in comments %}
@@ -92,7 +93,7 @@
                 {% endif %}
                 <!-- For loop ends here -->
                 {% endfor %}
-            </section>
+            </div>
         </div>
         <!-- Creating New Comments -->
         <section class="col-md-4 card mb-4 mt-3">
