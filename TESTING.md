@@ -71,13 +71,12 @@ As I expected, due to the use of Instagram reels, several critical aspects neede
 
 - **Topic pages**:    
     Current results: 
+    ![Topic page Lighthouse testing - current results](https://i.ibb.co/3kSp3P7/my-screenshots-2024-04-01-at-23-37-35.png)
 
-    ![Topic page Lighthouse testing - current results](https://i.ibb.co/xq31STL/Topic-page-lighthouse-testing.png)
+   Changes made: 
 
-    Changes made: 
-
-   The number of reels displayed per page was reduced. In an attempt to increase the performance score, I've reduced them from four to three and then to two. This is not ideal, as I want the user to decide what content to prioritize. However, I have decided to adopt this as a temporary solution until I find a better one.
-    A possible solution I'm considering is to create drop-down windows for each social media post, displaying the title, the description and hiding the video. This implementation will require some planning and time, so it won't be done at the current stage.
+   - **Reducing reels**: I'm still trying to effectively address the performance issue. In an attempt to increase the performance score, I've reduced the reels from four to three and then to two. This is not ideal, as I want the user to decide what content to prioritize. However, I have decided to adopt this as a temporary solution until I find a better one.
+   - **Future considerations**: One potential solution under consideration is the implementation of drop-down windows for each social media post. These windows would display the title and description while hiding the video content initially. This approach would require careful planning and development time, so is not feasible to implement at the current stage. But a continuous effort will be made to explore and implement more efficient strategies for displaying content and optimizing performance.
 
 - **About page**:
 
@@ -186,25 +185,40 @@ Below are the browsers that have been tested:
 - Safari Version 17.2.1
 
 ## Responsiveness 
-The website's responsiveness has been tested using Google Chrome Developer Tools. To ensure compatibility across different devices, various screen resolutions were simulated. A custom media query was implemented to address an issue with the iPad Pro display.
+The website's responsiveness has been tested using Google Chrome Developer Tools. To ensure compatibility across different devices, various screen resolutions were simulated. Custom media queries were implemented to address issues with the iPad Pro and 5K iMac Pro displays.
 
 The website now displays responsively across a wide range of devices and screen sizes.
 
 ## Bugs resolved
 - **Instagram content embed issue**
 
-There was a problem embedding Instagram content within the application.  The Instagram posts were not displayed when using the short embed code (see below), but it only worked with the original embed code.
+The application had a problem embedding Instagram content. The Instagram posts were not displayed when using the short embed code (see below), but they worked only with the original embed code.
+
+The short embed code, however, was preferred since tags and original captions would be removed.
+
 ```
 <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/{{ content.source_identifier }}/?utm_source=ig_embed&amp;utm_campaign=loading" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
 </blockquote>
 ```
-The short embed code was preferred since tags and original captions would be removed.
 
 To resolve this issue, an asynchronous script tag was added to the if statement in the resource_detail.html:
 ``` 
 <script async src="//www.instagram.com/embed.js"></script>
 ```
-The asynchronous script tag loads the Instagram embed JavaScript file from the Instagram domain.
+By loading the Instagram embed JavaScript file from the Instagram domain, the contents now work with the short embed code.
+
+- **Favicon not appearing on all pages**
+
+There was an issue with the favicon that displayed correctly on the homepage, but failed to render on other pages. This error was caused by the incorrect paths specified in the link tags.
+By incorporating ```[% static %]``` into the file paths, I made sure that the favicon files were correctly referenced, regardless of the URL.
+
+```
+<!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
+```
 
 ## Remaining bugs
 
