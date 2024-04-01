@@ -69,9 +69,7 @@ In my mind, purple appears calm, yet mysterious and enigmatic, so it still evoke
 
 At the same time, purple seems associated with healing, and healing from narcissistic abuse is the ultimate hope for my ideal users and the reason why I'm building this site.
 
-In the original plan for the homepage, some squares would serve as topics to click on. For simplicity, I have stuck with that, but I plan to add illustrations in the future to replace the purple squares - this is why the squares are added as images.
-
-
+In my original plan for the homepage, some squares would serve as topics to click on. For simplicity, I have stuck with that, but I plan to add illustrations in the future to replace the purple squares - this is why the squares are added as images.
 
 ### Fonts
 Fonts used are Roboto and Lato. They were imported using Google fonts.
@@ -121,6 +119,7 @@ Community page [Desktop and mobile]:
 ![Wireframe created using Balsamiq - Community Page](https://i.ibb.co/vPq1gvF/Community-page.png)
 
 ### Data Model
+The structure of our database was illustrated using an Entity-Relationship Diagram (ERD). This diagram shows how different entities within the system are related to each other and helps in understanding the data flow. The second version is currently the most accurate.
 
 ERD - first draft version:
 
@@ -133,18 +132,32 @@ ERD - second version:
 Draft flowchart for apps organisation:
 ![draft flowchart to organise apps](https://i.ibb.co/rZNXCF7/draft-apps-planning.png)
 
+The **applications** used are:
+
+- **homepage**: 
+  Responsible for managing core functionalities of the website, including category displays on the homepage and topic pages.
+
+- **about_page**:
+  Manages content related to the About section, including the form for collaborators.
+
+- **content_management**:
+  Manages third-party content, specifically social media resources, ensuring their seamless integration and display throughout the website.
+
+- **comments**:
+  Designed to facilitate user interactions and community features. Although not currently implemented at this stage, this app is present for future development. 
+
 ## User Experience
 
 #### Ideal users:
 
-- Someone who has experienced or is experiencing this kind of abuse;
+- Someone who has experienced or is experiencing Narcissistic abuse;
 - Someone who is interested in understanding more about Narcissism.
 
 #### As a developer, I expect:
 
-- the user to have easy navigation of all the content in the website;
-- the user to find the website appealing and informative in a different way than a search engine;
-- the user to find the content helpful and find support during their awareness journey or/and recovery process.
+- The user to have easy navigation of all the content in the website;
+- The user to find the website appealing and informative in a different way than a search engine;
+- The user to find the content helpful and find support during their awareness journey or/and recovery process.
 
 ### User Stories: Site accessibility & functionality
 
@@ -210,7 +223,7 @@ Draft flowchart for apps organisation:
 
 ### Current Features
 As previously mentioned, this is an ongoing project that I aim to develop further once I complete my Code Institute diploma.
-Currently, the website is structured and functions as follows:
+At the current stage, the website is structured and functions as follows:
 
 #### Navbar
 The navbar on every page contains the website name, navigation links, and auxiliary text.
