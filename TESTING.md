@@ -28,7 +28,7 @@ Due to the use of Instagram reels and the development of a full-stack website, I
     ![Homepage Lighthouse - current testing results](https://i.ibb.co/Wcm3Qfg/current-homepage.png)
 
     Changes made:
-- **Lazy Loading**: Implemented lazy loading feature for images in index.html, optimizing page loading times.
+- **Lazy Loading**: Implemented lazy loading feature for images in index.html, optimizing page loading times. (Update: This was then removed during HTML validation because of error message.)
 - **WebP Image Format**: Converted images to the WebP format to improve image compression and load times.
 - **Meta Tags**: Added essential meta tags to enhance search engine visibility and improve sharing on social media platforms.
 - **Image Quality Enhancement**: Improved the quality of images.
@@ -50,7 +50,7 @@ Due to the use of Instagram reels and the development of a full-stack website, I
             )
             ```
     
-    Unfortunately, none of the options worked.
+    Unfortunately, none of these options worked. 
 
 - **Topic pages**:    
     Current results: 

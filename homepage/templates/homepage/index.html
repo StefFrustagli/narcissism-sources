@@ -19,30 +19,30 @@
                 {% for topic in topic_list %}
                 <!-- Topic section -->
 
-                    <div class="col-md-6"> <!-- two columns -->
-                        <div class="card mb-2 h-100 d-flex justify-content-center align-items-center">
-                            <div class="card-body card-topic-title">
-                                <!-- Displaying topic image, topic title and description -->
-                                <a href="{% url 'topic_detail' topic.slug %}" class="topic-link">
-                                    <div class="image-container">
-                                        {% if "placeholder" in post.featured_image.url %}
-                                        <!-- Topic title as alt text for images -->
-                                        <img class="card-img-top" src="{% static 'images/default.jpg' %}"
-                                            alt="{{ topic.title }}>
-                                        {% else %}
-                                        <img class="card-img-top" src=" {{ topic.featured_image.url }}"
-                                            alt="{{ topic.title }}>
-                                        {% endif %}
-                                    </div>
-                                    <!-- Topic title -->
-                                    <h2 class="card-title">{{ topic.title }}</h2>
-                                    <!-- Topic short description -->
-                                    <h3 class="card-text">{{ topic.description }}</h3>
-                                </a>
-                            </div>
+                <div class="col-md-6"> <!-- two columns -->
+                    <div class="card mb-2 h-100 d-flex justify-content-center align-items-center">
+                        <div class="card-body card-topic-title">
+                            <!-- Displaying topic image, topic title and description -->
+                            <a href="{% url 'topic_detail' topic.slug %}" class="topic-link">
+                                <div class="image-container">
+                                    {% if "placeholder" in post.featured_image.url %}
+                                    <!-- Topic title as alt text for images -->
+                                    <img class="card-img-top" src="{% static 'images/default.jpg' %}"
+                                        alt="{{ topic.title }}">
+                                    {% else %}
+                                    <img class="card-img-top" src=" {{ topic.featured_image.url }}"
+                                        alt="{{ topic.title }}">
+                                    {% endif %}
+                                </div>
+                                <!-- Topic title -->
+                                <h2 class="card-title">{{ topic.title }}</h2>
+                                <!-- Topic short description -->
+                                <h3 class="card-text">{{ topic.description }}</h3>
+                            </a>
                         </div>
                     </div>
-            
+                </div>
+
                 {% if forloop.counter|divisibleby:2 %}
             </div>
             <div class="row">
