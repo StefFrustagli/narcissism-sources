@@ -67,7 +67,6 @@ h1.hidden-heading {
 
 /* Topic image */
 .image-container {
-  /* position: relative; */
   width: 13rem;
   height: 13rem;
 }
@@ -289,5 +288,19 @@ h1.hidden-heading {
   .website-body {
     max-width: 1800px;
     margin: auto;
+  }
+}
+
+@media (min-width: 5120px) and (min-height: 2880px) {
+  /* Styles for the website body */
+  .square-body {
+    max-width: 1800px;
+    margin: auto;
+  }
+  .text-end {
+    text-align-last: center;
+  }
+  .square-nav {
+    width: 40%;
   }
 }

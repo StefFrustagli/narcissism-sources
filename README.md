@@ -58,15 +58,23 @@ In the past few years, I have liked a large number of reels and videos about nar
 
 ### The design process: thinking through it
 
-Originally, I planned to use a purple color palette since it felt neutral (the color also reminded me of vampires, and this creature would be perfectly associated with the theme).
+It was important to me to create a simple and intuitive website where the viewers would be able to focus on the contents.
 
-However, as I was building the site and researching images, I wasn't sure about the color anymore. My interest was piqued by an illustration with a red background, a black silhouette of a body, and white strings. The colour red conveys danger vibes and it would fit perfectly - but it was too 'strong' so I reverted to purple.
+Originally, I planned to use a purple color palette since it felt neutral (the colour also reminded me of vampires, and this creature would be perfectly associated with the theme).
 
-Purple is neutral - it appears calm - yet mysterious and enigmatic, so in my mind it still evokes the alert feeling I wanted to reproduce. And as I said, it reminds me of vampires. The appropriate analogy with vampires and narcissism will be used at some point; I'm not sure how yet.
+However, as I was building the site and researching images, I wasn't sure about the colour anymore. My interest was piqued by an illustration with a red background, a black silhouette of a hand, and white strings. 
+The colour red conveys danger vibes and it would fit perfectly - but it was too 'strong', so I reverted to purple.
 
-The colour purple is also associated with healing, and healing from narcissistic abuse is the ultimate hope for my users and the reason why I built this site.
+In my mind, purple appears calm, yet mysterious and enigmatic, so it still evokes the feeling of alert I wanted to reproduce. And as I said, it reminds me of vampires. The appropriate analogy with vampires and narcissism will be used at some point.
 
-DA AGGIUNGERE
+At the same time, purple seems associated with healing, and healing from narcissistic abuse is the ultimate hope for my ideal users and the reason why I'm building this site.
+
+In the original plan for the homepage, some squares would serve as topics to click on. For simplicity, I have stuck with that, but I plan to add illustrations in the future to replace the purple squares - this is why the squares are added as images.
+
+
+
+### Fonts
+Fonts used are Roboto and Lato. They were imported using Google fonts.
 
 ### Colour palettes
 

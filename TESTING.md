@@ -6,10 +6,18 @@
 ## Validator Testing
 
 ### HTML
+All the HTML files were checked with [W3C Markup Validation Service](https://validator.w3.org/) and  errors identified addressed.
+
+Exclusions:
+Some errors involving Django elements, such as Summernote features, were excluded. These errors were acknowledged but not modified as they are integral to the correct functionality of the website.
 
 ### CSS
 
+CSS files were checked with [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator.html.en) with no errors.
+
 ### JavaScript
+JS files were checked with [JSHint](https://jshint.com/) with no errors.
+
 
 ### Python 
 [CI Python Linter](https://pep8ci.herokuapp.com/#) was used to validate the Python code. All the errors highlighted were fixed. 
@@ -17,7 +25,7 @@
 ## Lighthouse Testing
 I performed Lighthouse tests using Chrome Dev tools in an incognito window.
 
-Due to the use of Instagram reels and the development of a full-stack website, I expected several critical aspects to be addressed. Regarding the content used, I was mainly concerned about the site's performance and 'heaviness'.
+Due to the use of Instagram reels and the development of a full-stack website, I expected several critical aspects to be addressed. I was mainly concerned about the site's performance and 'heaviness'.
 
 - **Homepage**:
 
@@ -179,9 +187,7 @@ To resolve this issue, an asynchronous script tag was added to the if statement 
 ```
 The asynchronous script tag loads the Instagram embed JavaScript file from the Instagram domain.
 
-
-
-
 ## Remaining bugs
 
-There are no major issues that impact the website's functionalities. However, given the components involved, there are several aspects I need to address to improve the overall performance.
+There are no major issues that impact the website's functionalities. 
+

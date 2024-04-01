@@ -2,11 +2,6 @@ body {
   background-color: #f9fafc;
 }
 
-.website-body {
-  max-width: 1800px;
-  margin: auto;
-}
-
 /* Website title: brand */
 .brand {
   font-family: Lato, sans-serif;
@@ -33,7 +28,7 @@ body {
 }
 
 h1.hidden-heading {
-  display:none;
+  display: none;
 }
 
 /* Footer */
@@ -72,7 +67,6 @@ h1.hidden-heading {
 
 /* Topic image */
 .image-container {
-  /* position: relative; */
   width: 13rem;
   height: 13rem;
 }
@@ -130,12 +124,12 @@ h1.hidden-heading {
 .image-container:hover + .card-title {
   color: #b09cc6;
   font-weight: 500;
-} 
+}
 
 .card-title:hover {
   color: #b09cc6;
   font-weight: 500;
-} 
+}
 
 .card-text {
   color: #445261;
@@ -161,6 +155,8 @@ h1.hidden-heading {
 
 /* Title reel */
 .title-resource {
+   /* Topic card with same height */
+  height: 5.20rem;
   background-color: #7f5ea3;
   font-size: 1.3rem;
   color: #ffffff;
@@ -277,4 +273,20 @@ h1.hidden-heading {
 /* Error pages */
 .underline-link {
   text-decoration: underline;
+}
+
+/* Override breakpoint to improve responsiveness in tablets */
+@media (min-width: 992px) {
+  .col-lg-4 {
+    width: 440px;
+  }
+}
+
+/* Media query for big screens */
+@media (min-width: 4890px) and (min-height: 2942px) {
+  /* Styles for the website body */
+  .website-body {
+    max-width: 1800px;
+    margin: auto;
+  }
 }
