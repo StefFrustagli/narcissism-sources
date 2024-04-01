@@ -32,14 +32,16 @@ JS files were checked with [JSHint](https://jshint.com/) with no errors.
 ## Lighthouse Testing
 I performed Lighthouse tests using Chrome Dev tools in an incognito window.
 
-Due to the use of Instagram reels and the development of a full-stack website, I expected several critical aspects to be addressed. I was mainly concerned about the site's performance and 'heaviness'.
+As I expected, due to the use of Instagram reels, several critical aspects needed to be addressed. I was mainly concerned about the site's performance and 'heaviness' and how to improve this aspect.
 
 - **Homepage**:
 
     Initial results: 
+
     ![Homepage Lighthouse testing - initial results](https://i.ibb.co/6P9qR6r/my-screenshots-2024-03-31-at-18-18-50.png)
 
     Current results:
+
     ![Homepage Lighthouse - current testing results](https://i.ibb.co/Wcm3Qfg/current-homepage.png)
 
     Changes made:
@@ -69,6 +71,7 @@ Due to the use of Instagram reels and the development of a full-stack website, I
 
 - **Topic pages**:    
     Current results: 
+
     ![Topic page Lighthouse testing - current results](https://i.ibb.co/xq31STL/Topic-page-lighthouse-testing.png)
 
     Changes made: 
@@ -166,6 +169,9 @@ Due to the use of Instagram reels and the development of a full-stack website, I
 | ****                                |                                                                                                                                      | The Homepage panel should allow Amin users to add Topics.                                                                                                                   |                                                                                                                                                                                                                                      | Pass. It works as expected.                                                                        |                                             |
 | ****                                |                                                                                                                                      | The Contents panel should allow admin users to add content.                                                                                                                 |                                                                                                                                                                                                                                      | Pass. It works as expected.                                                                        |
 
+## User Stories completion
+
+To check User Stories completion, please refer to the [Kanban Board](https://github.com/users/StefFrustagli/projects/2/views/1).
 
 ## Automated testing
 The functionalities tested were:
@@ -203,4 +209,3 @@ The asynchronous script tag loads the Instagram embed JavaScript file from the I
 ## Remaining bugs
 
 There are no major issues that impact the website's functionalities. 
-

@@ -14,8 +14,6 @@ I strongly believe in the importance of education: narcissistic abuse, or violen
 
 View the live project [here](https://narcissism-website-8191a44972de.herokuapp.com/).
 
-Responsive Mockup: ![Responsive Mockup]() AGGIUNGI MOCKUP
-
 ## Table of Contents DA MODIFICARE
 
 - [Website Overview](#website-overview)
@@ -46,11 +44,11 @@ The development process for this project followed Agile methodology, emphasizing
 
 **Project Management**: I utilised GitHub Project boards to manage tasks, user stories, and project progression effectively.
 
-**User Stories**: User stories were categorized into EPICs A, B, C, D, E, and F based on user types and content specificity. I prioritized these user stories using the MoSCoW method, which categorizes requirements into Must have, Should have, Could have, and Won't have categories based on their importance and urgency.
-
-**Continuous Improvement**: Despite working solo on this project, I actively sought ways to enhance development processes and product quality. Regular retrospectives allowed me to reflect on past work, pinpoint areas for improvement, and brainstorm solutions.
+**User Stories**: User stories were categorized in a Kanban Board into EPICs A, B, C, D, E, and F based on user types and content specificity. I prioritized user stories using the MoSCoW method, which categorizes requirements into Must have, Should have, Could have, and Won't have categories based on their importance and urgency.
 
 [Link to the GitHub Project board](https://github.com/users/StefFrustagli/projects/2/views/1)
+
+**Continuous Improvement**: Despite working solo on this project, I actively sought ways to enhance development processes and product quality. Regular retrospectives allowed me to reflect on past work, pinpoint areas for improvement, and brainstorm solutions.
 
 ### Problem Statement
 
@@ -157,9 +155,9 @@ The **applications** used are:
 
 #### As a developer, I expect:
 
-- The user to have easy navigation of all the content in the website;
-- The user to find the website appealing and informative in a different way than a search engine;
-- The user to find the content helpful and find support during their awareness journey or/and recovery process.
+- The user to easily navigate through all the website's content;
+- The user to find the website appealing and informative in a different way from a search engine;
+- The user to find the content helpful and supportive during their awareness journey or/and recovery process.
 
 ### User Stories: Site accessibility & functionality
 
@@ -268,8 +266,11 @@ On every page, the footer displays copyright information.
 ![Footer with copyright information](https://i.ibb.co/pWSrrjN/my-screenshots-2024-03-29-at-17-01-21.png)
 
 #### Homepage
+
 There are currently six categories/topics displayed on the homepage, each with a brief description. 
 Topic titles are listed below a square. By clicking the topic title or square, users can access the relevant page. Whenever the square is hovered over and clicked, it simulates a button being pushed. This is a temporary effect, as I plan to add illustrations.
+
+![NPD website - Homepage](https://i.ibb.co/JxgFp8W/my-screenshots-2024-04-01-at-22-30-50.png)
 
 #### Topic page and content
 The number of items on a page is kept to a minimum in order not to overburden the loading time and disorient the user.
@@ -295,6 +296,7 @@ Form to leave a comment:
 Once submitted, the user will be able to edit or delete it thorugh the buttons below the comment.
 
 If the user needs to edit the comment, the text will reappear in the body field with an 'update' button:
+
 ![Form to update comment](https://i.ibb.co/Fqzv0Y2/my-screenshots-2024-03-29-at-21-00-10.png)
 
 In case of deletion, the user will be asked to confirm their choice. They will also have the option to cancel the action by clicking on "Close":
@@ -302,6 +304,7 @@ In case of deletion, the user will be asked to confirm their choice. They will a
 ![Delete comment confirmation](https://i.ibb.co/sHx3dw8/my-screenshots-2024-03-29-at-20-59-44.png)
 
 Users will see a notification when their comments are submitted and awaiting approval: 
+
 ![Notification "Comment updated"](https://i.ibb.co/DWdDjfs/my-screenshots-2024-03-29-at-21-01-59.png)
 
 The same applies when users delete a comment:
@@ -333,6 +336,8 @@ The logout page allows users to log out of their accounts. The user must confirm
 
 #### About page
 This page outlines the purpose of the website and my role as a creator. The purpose of my short presentation is to establish trust with the viewer and to explain the current state of the website in a clear and concise manner.
+
+![About section explaining the purpose of the website](https://i.ibb.co/KVgJv30/my-screenshots-2024-04-01-at-22-32-29.png)
 
 Below the About section there is a collaboration/feedback form that I invite the viewer to use.
 
@@ -401,13 +406,12 @@ I have a big project in mind, and this is just the first version. The following 
 - [Django Allauth:](https://django-allauth.readthedocs.io/en/latest/index.html) Used for authentication and account registration;
 - [Django Crispy Forms:](https://django-crispy-forms.readthedocs.io/en/latest/) Used to simplify the rendering of Django forms.
 - [Gunicorn:](https://gunicorn.org/) Python HTTP server, used as the Web Server to run Django on Heroku;
-- [Jest:](https://jestjs.io/) A delightful JavaScript Testing Framework, used for automated tests;
 - [Summernote:](https://github.com/summernote/django-summernote) To provide a WYSIWYG editor for customizing new blog content and add images.
 
 ### Software and Web Applications
 
 - [Code Institute Postgres database](https://dbs.ci-dbs.net) was the Database used for this application.
-- [Chrome DevTools:](https://developer.chrome.com/docs/devtools/) Used to test the response on different screen sizes, debugging and to generate a Lighthouse report to analyze
+- [Chrome DevTools:](https://developer.chrome.com/docs/devtools/) Used to test the response on different screen sizes, debugging and to generate a Lighthouse report to analyze.
 - [PEP8](http://pep8online.com/) was used to check the code for PEP8 requirements.
 - [HTML Validator:](https://validator.w3.org/) Check your code for HTML validation.
 - [JSHint:](https://jshint.com/) Check code for JavaScript validation.
