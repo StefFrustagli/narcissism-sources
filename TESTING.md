@@ -173,6 +173,12 @@ The functionalities tested were:
 - POST data and return of the correct response;
 - Access to the topic page and the About page.
 
+## Browser Compatibility
+Below are the browsers that have been tested:
+- Chrome Version 123.0.6312.87
+- Firefox 118.0.2
+- Safari Version 17.2.1
+
 ## Responsiveness 
 The website's responsiveness has been tested using Google Chrome Developer Tools. To ensure compatibility across different devices, various screen resolutions were simulated. A custom media query was implemented to address an issue with the iPad Pro display.
 

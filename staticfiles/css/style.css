@@ -282,11 +282,34 @@ h1.hidden-heading {
   }
 }
 
-/* Media query for big screens */
+/* Media queries for big screens */
+
+@media (min-width: 1250px) and (min-height: 856px) {
+  /* Styles for the website body */
+  .squares-container {
+    max-width: 588px;
+    margin: auto;
+  }
+}
+
 @media (min-width: 4890px) and (min-height: 2942px) {
   /* Styles for the website body */
   .website-body {
     max-width: 1800px;
     margin: auto;
+  }
+}
+
+@media (min-width: 5120px) and (min-height: 2880px) {
+  /* Styles for the website body */
+  .square-body {
+    max-width: 1800px;
+    margin: auto;
+  }
+  .text-end {
+    text-align-last: center;
+  }
+  .square-nav {
+    width: 40%;
   }
 }
