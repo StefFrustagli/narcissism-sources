@@ -128,9 +128,6 @@
                 <div class="alert {{ message.tags }} alert-dismissible
             fade show" id="msg" role="alert">
                     {{ message | safe }}
-                    <!-- {% if not user.is_authenticated %}
-                    <p>Login <a href="{% url 'account_login' %}">here</a></p>
-                    {% endif %} -->
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
                 {% endfor %}
