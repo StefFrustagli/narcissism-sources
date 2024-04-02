@@ -52,9 +52,10 @@ The development process for this project followed Agile methodology, emphasizing
 
 ### Problem Statement
 
-In the past few years, I have liked a large number of reels and videos about narcissism on Instagram and YouTube. These videos played a crucial role in my awareness journey - I believe they were pivotal to my recovery. But this material was somehow 'hidden' or lost in a sea of information on social apps, and I felt it was chaotic. I wanted to make this helpful material organised in one place and easily accessible to those who could benefit from it. It might have helped someone else as well.
+In the past few years, I watched a large number of reels and videos about Narcissistic abuse on Instagram and YouTube accounts. These videos played a crucial role in my awareness journey - I believe they were pivotal to my recovery. However, I thought this material was 'hidden' or lost in the sea of social apps. I felt it was chaotic. This helpful material needed to be gathered in one place, so that it could be easily accessed by those who could benefit from it. Perhaps it could help someone else as well - I thought.
 
-**Proposed solution**: What can I do to accomplish that? My answer was this website. The primary intent was to create a site, easy to navigate and interactive, containing all the material (or at least some of it) that could be as helpful to others as much as it was tor me.
+**Proposed solution**: How can I accomplish this? This website is my answer.
+My primary intent was to create a site, easy to navigate and interactive, containing resources (or at least some of them) that could be as helpful to others as much as they were for me.
 
 ### The design process: thinking through it
 
@@ -65,11 +66,11 @@ Originally, I planned to use a purple color palette since it felt neutral (the c
 However, as I was building the site and researching images, I wasn't sure about the colour anymore. My interest was piqued by an illustration with a red background, a black silhouette of a hand, and white strings. 
 The colour red conveys danger vibes and it would fit perfectly - but it was too 'strong', so I reverted to purple.
 
-In my mind, purple appears calm, yet mysterious and enigmatic, so it still evokes the feeling of alert I wanted to reproduce. And as I said, it reminds me of vampires. The appropriate analogy with vampires and narcissism will be used at some point.
+In my mind, purple appears calm, yet mysterious and enigmatic, so it still evokes the feeling of alert I wanted to evoke. And as I said, it reminds me of vampires. The appropriate analogy with vampires and narcissism will be used at some point.
 
 At the same time, purple seems associated with healing, and healing from narcissistic abuse is the ultimate hope for my ideal users and the reason why I'm building this site.
 
-In my original plan for the homepage, some squares would serve as topics to click on. For simplicity, I have stuck with that, but I plan to add illustrations in the future to replace the purple squares - this is why the squares are added as images.
+In the original plan for the homepage, some squares would serve as topics to click on. For simplicity, I have stuck with that, but I plan to add illustrations in the future to replace the purple squares - this is why the squares are added as images.
 
 ### Fonts
 Fonts used are Roboto and Lato. They were imported using Google fonts.
@@ -85,6 +86,7 @@ Fonts used are Roboto and Lato. They were imported using Google fonts.
 #7e3594, #ffffff, #594275
 
 ### Wireframes
+While the wireframes differ from the current state of the project, the structure has been maintained.
 
 Draft project plan:
 
@@ -222,7 +224,7 @@ The **applications** used are:
 ## Features and functionalities
 
 ### Current Features
-As previously mentioned, this is an ongoing project that I aim to develop further once I complete my Code Institute diploma.
+This is an ongoing project that I aim to develop further once I complete my Code Institute diploma.
 At the current stage, the website is structured and functions as follows:
 
 #### Navbar
@@ -326,10 +328,10 @@ In addition, it contains a link that leads to the Login page, if the user has al
 The Sign in page allows registered users to sign into their account by entering their username and password. It also contains a link to the Register page, if the user hasn't created an account yet.
 ![Sign-in form](https://i.ibb.co/2htJsWd/my-screenshots-2024-03-30-at-11-21-19.png)
 
-Also, users have the option of having their login information remembered, so they don't have to re-enter their login information each time they visit the website.
+Also, users have the option of having their login information remembered, so they don't have to re-enter their login details each time they visit the website.
 
 #### Logout page
-The logout page allows users to log out of their accounts. The user must confirm their choice. The user can also cancel the action and return to the homepage.
+The logout page allows users to log out of their accounts. The user must confirm their choice. They  can also cancel the action and return to the homepage.
 
 ![Log out form](https://i.ibb.co/wrqnYDk/my-screenshots-2024-03-30-at-10-57-15.png)
 
@@ -538,7 +540,7 @@ DATABASES = {
 
 ### Content
 
-Currently, all social resources come from Instagram. However, expanding the content sources is on the agenda, with plans to integrate YouTube, and possibly TikTok material, in the near future.
+Currently, all social resources come from Instagram. However, expanding the content sources is on the agenda, with plans to integrate YouTube, and possibly TikTok material.
 
 Social accounts embedded include:
 - [understandingthenarc](https://www.instagram.com/understandingthenarc/?utm_source=ig_embed&ig_rid=6fd414fc-fe77-4373-a6d0-5278cfdcfa6a);
@@ -555,7 +557,7 @@ Social accounts embedded include:
 
 ### Code
 
-The code was mainly based on Code Institute's walkthrough in the Django module. This is my first time using technologies such as Django and Bootstrap, so it has been challenging, but my goal is to keep working on this project going forward and improve the code.
+The code was mainly based on Code Institute's walkthrough in the Django module. This is my first time using technologies such as Django and Bootstrap, so it has been challenging. My goal is to keep working on this project to improve it.
 
 ### Acknowledgment
 
