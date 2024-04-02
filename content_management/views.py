@@ -19,9 +19,6 @@ def resource_detail(request, topic_id):
     """
     topic = get_object_or_404(Topic, id=topic_id)
     content_set = Content.objects.filter(topic=topic)
-
-    # content_set = Content.objects.filter(content=content)
-
     template = 'topic_detail.html'
 
     context = {

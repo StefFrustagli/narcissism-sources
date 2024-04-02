@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 from .views import handler404, handler500, handler403, handler405
 
+# URL patterns list
 urlpatterns = [
     path("about_page/", include("about_page.urls"), name="about_page-urls"),
     path("accounts/", include("allauth.urls")),
@@ -28,6 +29,7 @@ urlpatterns = [
     path("", include("homepage.urls"), name="homepage-urls"),
 ]
 
+# Handling custom error pages
 handler404 = "narcissism_website.views.handler404"
 handler500 = "narcissism_website.views.handler500"
 handler403 = "narcissism_website.views.handler403"
